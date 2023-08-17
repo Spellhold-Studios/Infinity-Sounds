@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A mod for Baldur's Gate II which allows you to, e.g., restore all the classic Baldur's Gate sounds, remedy a lot of audio-related issues, overhaul creature sounds, revive EAX support, and tweak NPC soundsets.">
+    <title>Infinity Sounds - Readme</title>
+    <style>
+      html {
+        line-height: 1.6;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      body {
+        font-family: sans-serif;
+        color: #333;
+        background-color: #fff;
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 2em;
+        margin: 0;
+      }
+
+      h2 {
+        margin: 1.5rem 0 1rem;
+      }
+
+      h2::first-letter {
+        color: #990000;
+      }
+
+      h4, p {
+        margin: 0 0 1rem;
+      }
+
+      h3 {
+        margin: 1rem 0 1rem;
+      }
+
+      h3.smaller {
+        font-size: 1em;
+        margin-top: 1.5rem;
+      }
+
+      h4 {
+        font-size: 1em;
+      }
+
+      p.note {
+        margin:1.5rem 0;
+        text-align:left;
+        background-color:#fdfdfd;
+        padding:1em;
+        border-left:.3em solid #990000;
+        font-weight:400;
+        box-shadow:0 .0625rem .0625rem 0 rgba(0,0,0,.2)
+        }
+
+      a {
+        color: #990000;
+        text-decoration: none;
+        background-color: transparent;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      a:active {
+        color: #531108;
+      }
+
+      code {
+        font-family: monospace, monospace;
+        font-size: 1em;
+        color: #000;
+        background-color: #f8f9fa;
+        border: 0.0625rem solid #eaecf0;
+        border-radius: 0.125rem;
+        padding: 0 0.0625rem;
+      }
+
+      header {
+        text-align: center;
+        padding: 0.5rem;
+        margin-bottom: 0.25rem;
+      }
+
+      header p {
+        margin-bottom: 0.25rem;
+      }
+
+      header .skellymod {
+        font-size: 1.17rem;
+        font-weight: bold;
+        margin-bottom: 0.75rem;
+      }
+
+      nav {
+        font-size: 0.875rem;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background-color: #f7f9fa;
+        box-shadow: 0 0.0625rem 0.0625rem 0 rgba(0,0,0,0.2);
+      }
+
+      nav ul {
+        list-style-type: none;
+        font-variant: small-caps;
+        text-align: center;
+        overflow: hidden;
+        padding: 0;
+        margin: 0 auto;
+      }
+
+      nav li {
+        display: inline-block;
+      }
+
+      nav a {
+        display: inline-block;
+        color: #333;
+        padding: 0.3rem 0.6rem;
+        position: relative;
+      }
+
+      nav a:hover, nav a:active {
+        color: #990000;
+        text-decoration: none;
+      }
+
+      nav a:active {
+        top: 0.0625rem;
+      }
+
+      nav .dropdown {
+        display: inline-block;
+      }
+
+      nav .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f7f9fa;
+        box-shadow: 0 0.125rem 0.1875rem 0 rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+      nav .dropdown-content a {
+        display: block;
+        font-size: 0.75rem;
+        text-align: left;
+      }
+
+      nav .dropdown:hover .dropdown-content {
+         display: block;
+       }
+
+      main {
+        max-width: 34rem;
+        margin: 0 auto;
+        padding: 1.5rem 0.5rem;
+      }
+
+      main a.jumplink::before {
+        display: block;
+        content: "";
+        margin-top: -2rem;
+        height: 2rem;
+        visibility: hidden;
+      }
+
+      main .subheading {
+        font-size: 0.875rem;
+        color: #777;
+        margin: -0.75rem 0 1.15rem 0;
+      }
+
+      main ul {
+        margin: 0 0 1rem;
+        padding: 0;
+        list-style-type: square;
+        padding-left: 1rem;
+      }
+
+      section li {
+        margin: 0 0 0.5rem;
+      }
+
+      section ol {
+        margin: 0 0 2rem;
+        padding-left: 1rem;
+      }
+
+      .component ul, .vhist ul {
+        list-style-type: square;
+        padding-left: 1rem;
+      }
+
+      ul.nosquares {
+        list-style-type: none;
+        padding-left: 0.3rem;
+      }
+
+      .vhist .vhistsubheading {
+        font-weight: normal;
+        color: #777;
+        padding-left: 0.25rem;
+      }
+
+      table, th, td {
+        border: none;
+        line-height: 2;
+        padding-left: 0.1rem;
+      }
+
+      td {
+        padding-right: 1.5rem
+      }
+
+      @media screen and (max-width: 1079px){
+
+        header {
+          padding: 0.5rem 2.1rem;
+        }
+
+        nav {
+          position: static;
+        }
+
+        nav li {
+          display: block;
+          float: none;
+          line-height: 2;
+        }
+
+        main a.jumplink::before {
+          display: none;
+        }
+
+      }
+
+      @media screen and (max-width: 1279px){
+
+        nav .dropdown:hover .dropdown-content {
+           display: none;
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <a id="top"></a>
+    <header>
+      <h1>Infinity Sounds</h1>
+        <p class="skellymod">A mod for Baldur's Gate II</p>
+        <p class="modinfo">Version 2.0</p>
+        <p class="modinfo"><a href="http://www.shsforums.net/files/file/1081-infinity-sounds/">Download</a> &nbsp;|&nbsp; <a href="http://www.shsforums.net/topic/59358-infinity-sounds-v2-beta/">Forum</a> &nbsp;|&nbsp; <a href="https://github.com/skellytz/infinity-sounds">GitHub</a></p>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#supported-games">Supported games</a></li>
+        <li><a href="#requirements">Requirements</a></li>
+        <li><a href="#compatibility">Compatibility</a></li>
+        <li><a href="#suggested-mods">Suggested mods</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li class="dropdown">
+          <a href="#components">Components</a>
+          <div class="dropdown-content">
+            <a href="#restore-bg1-spellcasting-voices">Restore BG1 Spellcasting Voices</a>
+            <a href="#restore-bg1-spellcasting-sounds">Restore BG1 Spellcasting Sounds</a>
+            <a href="#restore-bg1-weapon-sounds">Restore BG1 Weapon Sounds</a>
+            <a href="#restore-bg1-armor-sounds">Restore BG1 Armor Sounds</a>
+            <a href="#restore-bg1-gui-sounds">Restore BG1 GUI Sounds</a>
+            <a href="#restore-bg1-pc-soundsets">Restore BG1 PC Soundsets</a>
+            <a href="#restore-gulp-sound">Restore Gulp Sound</a>
+            <a href="#restore-chunked-death-sound">Restore Chunked Death Sound</a>
+            <a href="#tweak-sound-channel-volume-levels">Tweak Sound Channel Volume Levels</a>
+            <a href="#enable-footsteps-during-combat">Enable Footsteps During Combat</a>
+            <a href="#mute-reputation-change-sounds">Mute Reputation Change Sounds</a>
+            <a href="#mute-tooltip-paper-sound">Mute Tooltip Paper Sound</a>
+            <a href="#restore-bg1-ambient-sounds">Restore BG1 Ambient Sounds</a>
+            <a href="#restore-environmental-audio">Restore Environmental Audio</a>
+            <a href="#restore-tweak-soundsets">Restore & Tweak Soundsets</a>
+            <a href="#more-existence-sounds">More Existence Sounds</a>
+            <a href="#tweak-existence-sound-delay">Tweak Existence Sound Delay</a>
+            <a href="#restore-npc-voiceovers">Restore NPC Voiceovers</a>
+            <a href="#additional-npc-voiceovers">Additional NPC Voiceovers (by Salk)</a>
+          </div>
+        </li>
+        <li><a href="#credits">Credits</a></li>
+        <li><a href="#version-history">Version history</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <a class="jumplink" id="introduction"></a>
+        <h2>Introduction</h2>
+        <p>In a nutshell, Infinity Sounds is a mod for Baldur's Gate II which aims to improve many sonic aspects of the game. The mod allows you to, e.g., restore all the classic Baldur's Gate sounds, remedy a lot of audio-related issues, overhaul creature sounds, revive EAX support, and tweak NPC soundsets.</p>
+      </section>
+      <section>
+        <a class="jumplink" id="supported-games"></a>
+        <h2>Supported games</h2>
+        <p>The following games are currently supported:</p>
+        <ul>
+          <li>Baldur's Gate II: Throne of Bhaal</li>
+          <li>Baldur's Gate Trilogy</li>
+          <li>Baldur's Gate: Enhanced Edition</li>
+          <li>Baldur's Gate: Siege of Dragonspear</li>
+          <li>Baldur's Gate II: Enhanced Edition</li>
+          <li>Enhanced Edition Trilogy</li>
+        </ul>
+      </section>
+      <section>
+        <a class="jumplink" id="requirements"></a>
+        <h2>Requirements</h2>
+        <p>For the classic Baldur's Gate II, the following game engine extenders must be installed before Infinity Sounds for several key components to work:</p>
+        <ul>
+          <li><a href="https://github.com/BGforgeNet/TobEx">TobEx</a></li>
+          <li><a href="https://github.com/SpellholdStudios/TobEx_AfterLife">TobEx AfterLife</a></li>
+        </ul>
+      </section>
+      <section>
+        <a class="jumplink" id="compatibility"></a>
+        <h2>Compatibility</h2>
+        <p>If possible, <strong>try to install this mod last</strong> before <a href="https://github.com/SpellholdStudios/generalized_biffing">biffing</a>. Infinity Sounds does not add any new game content or change any of the game rules; therefore, it will most likely not benefit from patches introduced by other mods. If other mods require the same, choose the most convenient order for quick uninstallation of components.</p>
+        <p>If you intend to use <a href="https://github.com/omni-axa/Lolfixer">Lolfixer</a>, <strong>install it before Infinity Sounds</strong>.</p>
+        <p class="note">In any case, avoid installing Infinity Sounds before mods which overwrite, add, or modify: spells, items, or creatures.</p>
+      </section>
+      <section>
+        <a class="jumplink" id="suggested-mods"></a>
+        <h2>Suggested mods</h2>
+        <p>Below is a list of recommended mods which offer audio-related fixes, tweaks, or content restorations. Generally, <strong>install any of these mods before Infinity Sounds</strong>. Consult the respective mod readme files for the exact installation order.</p>
+        <ul>
+          <li><a href="https://github.com/Gibberlings3/BG2-Fixpack">BG2 Fixpack</a> corrects and restores a number of sounds.</li>
+          <li><a href="https://www.gibberlings3.net/forums/topic/36123-new-baldurs-gate-2-ee-style-english-game-text-update-available/">BG2 EE-Style GTU</a> fixes sounds associated with dialogue lines.</li>
+          <li><a href="https://github.com/SpellholdStudios/Nostalgia-Pack">Nostalgia Pack</a> puts the BG back into BGEE.</li>
+          <li><a href="https://github.com/SpellholdStudios/AC-Miscellaneous-Tweaks">AC's Miscellaneous Tweaks</a> ports BGEE, BG2EE, and SoD soundsets to other BG games.</li>
+        </ul>
+      </section>
+      <section>
+        <a class="jumplink" id="installation"></a>
+        <h2>Installation</h2>
+        <p>Extract the file <code>setup-infinitysounds.exe</code> and the folder <code>infinitysounds</code> from the mod archive into your game directory.</p>
+        <p>Run <code>setup-infinitysounds.exe</code> and follow the prompts to install the individual components.</p>
+        <p>To uninstall or change any of the components, simply run the setup again and follow the on-screen instructions.</p>
+        <p><a href="https://github.com/ALIENQuake/ProjectInfinity">Project Infinity</a> is recommended for managing mod installations.</p>
+      </section>
+      <section>
+        <a class="jumplink" id="components"></a>
+        <h2>Components</h2>
+        <p>Infinity Sounds includes a total of nineteen distinct components. <strong>Please read each description carefully before installing</strong>.</p>
+          <section class="component">
+            <a class="jumplink" id="restore-bg1-spellcasting-voices"></a>
+            <h3>Restore BG1 Spellcasting Voices</h3>
+            <p>This component replaces the default Latin spell recitation with the sinister and ritualistic incantations from the classic BG1.
+            <p>All the restored sound files have been cleaned of audible compression artifacts or distortion.</p>
+          </section>
+          <section class="component">
+            <a class="jumplink" id="restore-bg1-spellcasting-sounds"></a>
+            <h3>Restore BG1 Spellcasting Sounds</h3>
+            <p>First and foremost, this component restores all the original sounds from BG1 to the appropriate spells. Additionally, it brings more consistency to many spells which use sounds reserved for other spellcasting schools.</p>
+          </section>
+          <section class="component">
+            <a class="jumplink" id="restore-bg1-weapon-sounds"></a>
+            <h3>Restore BG1 Weapon Sounds</h3>
+            <p>Most of the weapon swings and shots in BG2 sound much different than in the prequel. Flails, spears, bows, and crossbows are prime examples here. This component restores all the combat attack sounds from BG1.</p>
+            <p>Included are tweaked bow draw and release sounds which match the speed of the combat animations slightly better.</p>
+          </section>
+          <section class="component">
+            <a class="jumplink" id="restore-bg1-armor-sounds"></a>
+            <h3>Restore BG1 Armor Sounds</h3>
+            <p>Much in a similar fashion as the above, this component replaces the default combat hit sounds with their BG1 counterparts. The former tend to be a bit more abrupt, while the latter have more emphasized clashes and thumps.</p>
+            <p>This component also includes the leather squeaks and metal clanks as characters move around in armor. The BG1 variants are slightly less pronounced and more realistic.</p>
+          </section>
+          <section class="component">
+            <a class="jumplink" id="restore-bg1-gui-sounds"></a>
+            <h3>Restore BG1 GUI Sounds</h3>
+            <p>For the most part, these are very similar; however, some players may wish to restore the original BG1 sounds for the UI panels and inventory management. The most noticeable difference is that the BG2 inventory variants have an additional rattle.</p>
+          </section>
+          <section class="component">
+            <a class="jumplink" id="restore-bg1-pc-soundsets"></a>
+            <h3>Restore BG1 PC Soundsets</h3>
+            <p class="subheading">English only</p>
+            <p>This component allows you to select the original BG1 soundsets for your custom characters.</p>
+          </section>
+          <section class="component">
+            <a class="jumplink" id="restore-gulp-sound"></a>
+            <h3>Restore Gulp Sound</h3>
+            <p>In BG2, potions lost one of the sound effects. This restores the memorable sound played when a character drinks a potion.</p>
+          </section>
+          <section class="component">
+            <a class="jumplink" id="restore-chunked-death-sound"></a>
+            <h3>Restore Chunked Death Sound</h3>
+            <p>If you enable gore in the game options, you will see a special death animation when HP go well below zero; however, the related &quot;chunking&quot; sound present in BG1 is missing in the sequel. This component reintroduces the chunked death sound to BG2.</p>
+          </section>
+          <section class="component">
+            <a class="jumplink" id="tweak-sound-channel-volume-levels"></a>
+            <h3>Tweak Sound Channel Volume Levels</h3>
+            <p>These are not to be confused with the volume sliders in the game options. The sound channels are divided into: narration, ambients, actions, swings, missiles, hits, casting, GUI, dialog, characters, monsters, footsteps, and armor movement. The suggested tweaked variant attempts to balance the levels between BG1 and BG2.</p>
+          </section>
+          <section class="component">
+            <a class="jumplink" id="enable-footsteps-during-combat"></a>
+            <h3>Enable Footsteps During Combat</h3>
+            <p>Due to a bug, the game engine always disables footsteps during combat, regardless of the <code>Disable Footsteps During Combat=0</code> setting available in the configuration files. This is because the key was misspelled in the executable as <code>Disable Foot Steps During Combat</code>. This component adds the misspelled key to the configuration files so that the game can finally recognize it.</p>
+          </section>
+          <section class="component">
+            <a class="jumplink" id="mute-reputation-change-sounds"></a>
+            <h3>Mute Reputation Change Sounds</h3>
+            <p>This component disables the punishing sound which blares out on reputation loss and the fanfare trumpet on reputation gain.</p>
+          </section>
+          <section class="component">
+            <a class="jumplink" id="mute-tooltip-paper-sound"></a>
+            <h3>Mute Tooltip Paper Sound</h3>
+            <p>This is for players who would prefer to disable the paper-like sound played when tooltips roll out on the screen.</p>
+          </section>
+          <section class="component">
+            <a class="jumplink" id="restore-bg1-ambient-sounds"></a>
+            <h3>Restore BG1 Ambient Sounds</h3>
+            <p>This component adds a rooster crow and an additional horse whinny to the appropriate BG1 areas. It also restores an unused main day ambient to the fishing village area, which matches the rural environment a little better.</p>
+          </section>
+          <section class="component">
+            <a class="jumplink" id="restore-environmental-audio"></a>
+            <h3>Restore Environmental Audio</h3>
+            <p>The classic BG2 utilized the now-deprecated DS3D and <a href="https://en.wikipedia.org/wiki/Environmental_Audio_Extensions">EAX</a> for hardware-accelerated audio positioning and effects. Thanks to <a href="https://github.com/kcat/dsoal">DSOAL</a>, this component revives environmental and positional audio in the classic BG2, without the need for legacy hardware or drivers.</p>
+            <p>Advanced users may tweak the settings in <code>alsoft.ini</code> located in the main game folder.</p>
+            <p class="note">Some players experience crashes on game launch with this component installed. Unfortunately, certain combinations of Windows versions and system configuration prevent the use of DSOAL. Please report any issues so that the sources of the crashes can be investigated further.</p>
+          </section>
+          <section class="component">
+            <a class="jumplink" id="restore-tweak-soundsets"></a>
+            <h3>Restore &amp; Tweak Soundsets</h3>
+            <p class="subheading">Requires <a href="https://github.com/BGforgeNet/TobEx">TobEx</a> and <a href="https://github.com/SpellholdStudios/TobEx_AfterLife">TobEx AfterLife</a></p>
+            <p>The biggest component of Infinity Sounds attempts to solve many audio-related issues with creatures. Its main goal is to overhaul monster, animal, atmosphere, and NPC soundsets. This includes, e.g., restoring missing sounds and character lines, revamping attack sounds, as well as refining both embedded creature and animation soundsets.</p>
+            <p><strong>Below are some of the highlights</strong>:</p>
+            <ul>
+              <li>Completely restored BG1, BG2, and IWD soundsets which previously suffered from animation or filename conflicts.</li>
+              <li>Restored numerous creature sounds: melee, ranged, battle cry, selection, damage, dying, stand, morale, existence, etc.</li>
+              <li>Properly matched attack sound alternatives without &quot;silent attacks&quot; or overlapping sounds.</li>
+              <li>Synchronized attack sounds with attack animation frames.</li>
+              <li>Restored many unused NPC lines and sounds, complete with subtitles: morale, battle cry, damage, dying, selection, rare, etc.</li>
+              <li>Addressed a lot of minor soundset inconsistencies.</li>
+            </ul>
+            <p class="note">The game engine fixes provided by TobEx AfterLife for the classic BG2 allow this component to reach its full potential. BGEE and BG2EE (patch version 2.6) still suffer from several game engine bugs which make this component less effective. The bugs have been reported to the developers and, hopefully, will be fixed in the future.</p>
+          </section>
+          <section class="component">
+            <a class="jumplink" id="more-existence-sounds"></a>
+            <h3>More Existence Sounds</h3>
+            <p class="subheading">Requires component <a href="#restore-tweak-soundsets">Restore &amp; Tweak Soundsets</a></p>
+            <p>Misspelled in the game as &quot;existance&quot; sounds, these are also known as creature &quot;idle&quot; sounds and are played at random intervals, effectively acting as mobile ambients. While the previous component only restores such sounds to some creatures, this one offers more existence sounds to many additional monsters, animals, and NPCs. The new sounds have been carefully selected from the available audio resources.</p>
+          </section>
+          <section class="component">
+            <a class="jumplink" id="tweak-existence-sound-delay"></a>
+            <h3>Tweak Existence Sound Delay</h3>
+            <p class="subheading">Requires component <a href="#restore-tweak-soundsets">Restore &amp; Tweak Soundsets</a></p>
+            <p>In BG2, the default interval between existence sounds is much longer than in the prequel, which takes away from the experience. This component sets the delay range to the closest matching the original BG1 behavior. Some creatures will use different values to prevent a cacophony.</p>
+          </section>
+          <section class="component">
+            <a class="jumplink" id="restore-npc-voiceovers"></a>
+            <h3>Restore NPC Voiceovers</h3>
+            <p class="subheading">English only</p>
+            <p>This component restores minor unused voiceovers found in the game files. You will be able to hear them during dialogues with, e.g., Bodhi, Gaelan Bayle, Edwin, Keldorn, Anomen, Sarevok, Rielev, Nyalee, and several more.</p>
+            <p>Some of the restored audio files have been edited where necessary to match the existing dialogue text.</p>
+          </section>
+          <section class="component">
+            <a class="jumplink" id="additional-npc-voiceovers"></a>
+            <h3>Additional NPC Voiceovers (by Salk)</h3>
+            <p class="subheading">English only</p>
+            <p>While examining the dialogue files, Salk discovered that some character lines were clearly intended to be voiced, and hired artists to record the missing voiceovers. The characters in question are: Captain Samand, Countess Santele, and Mateo (all three met during a side quest in Saradush). Salk kindly offered the voiceovers to be part of this mod.</p>
+          </section>
+      </section>
+      <section>
+        <a class="jumplink" id="credits"></a>
+        <h2>Credits</h2>
+        <h3 class="smaller">Infinity Sounds authors</h3>
+          <ul class="nosquares">
+            <li>skellytz</li>
+            <li>Tash</li>
+          </ul>
+        <h3 class="smaller">Baldur's Gate creators</h3>
+          <ul class="nosquares">
+            <li>BioWare</li>
+            <li>Black Isle Studios</li>
+            <li>Interplay Entertainment</li>
+            <li>Overhaul Games</li>
+            <li>Beamdog</li>
+          </ul>
+        <h3 class="smaller">Voiceover artists</h3>
+          <table>
+            <tr>
+              <td><a href="https://www.fiverr.com/alfonsogiansa">@alfonsogiansa</a></td>
+              <td>Captain Samand</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.fiverr.com/livingsamantha">@livingsamantha</a></td>
+              <td>Countess Santele</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.fiverr.com/slipstreamer">@slipstreamer</a></td>
+              <td>Mateo</td>
+            </tr>
+          </table>
+        <h3 class="smaller">Special thanks</h3>
+          <ul>
+            <li>Andrea C. for extensive beta-testing, bug reports, and tons of invaluable feedback.</li>
+            <li>Insomniator for receiving the suggestions and adding the requested features to TobEx AfterLife.</li>
+            <li>Salk for testing since the earliest version, hiring the voiceover artists, and offering the additional voiceovers to be part of this mod.</li>
+            <li>Everyone from <a href="http://www.shsforums.net/">Spellhold Studios</a>, <a href="https://www.gibberlings3.net/forums">The Gibberlings Three</a>, <a href="https://forums.pocketplane.net/">Pocket Plane Group</a>, and other modding communities for keeping the Infinity Engine running.</li>
+          </ul>
+        <h3 class="smaller">Tools used</h3>
+          <ul>
+            <li><a href="https://www.audacityteam.org/">Audacity</a></li>
+            <li><a href="http://www.blackwyrmlair.net/prefixes/">Community Filename Prefix Reservations</a></li>
+            <li><a href="https://github.com/K4thos/EET/tree/master/EET/other/cpmvars">Cross-Platform Modding Variables</a></li>
+            <li><a href="https://github.com/kcat/dsoal">DSOAL</a></li>
+            <li><a href="https://gibberlings3.github.io/iesdp/">IESDP</a></li>
+            <li><a href="https://github.com/Argent77/NearInfinity">Near Infinity</a></li>
+            <li><a href="https://github.com/WeiDUorg/weidu">WeiDU</a></li>
+            <li><a href="https://github.com/Argent77/NotePad_PlusPlus_WeiDU">WeiDU Syntax Highlighters for Notepad++</a></li>
+          </ul>
+      </section>
+      <section class="vhist">
+        <a class="jumplink" id="version-history"></a>
+        <h2>Version history</h2>
+        <h3 class="smaller">2.0<span class="vhistsubheading">(17 Aug 2023)</span></h3>
+          <ul>
+            <li>New component: Tweak Sound Channel Volume Levels</li>
+            <li>New component: Enable Footsteps During Combat</li>
+            <li>New component: Restore BG1 Ambient Sounds</li>
+            <li>New component: Restore Environmental Audio</li>
+            <li>New component: Restore &amp; Tweak Soundsets</li>
+            <li>New component: More Existence Sounds</li>
+            <li>New component: Tweak Existence Sound Delay</li>
+            <li>New component: Restore NPC Voiceovers</li>
+            <li>New component: Additional NPC Voiceovers (by Salk)</li>
+            <li>Support for BGEE, SoD, BG2EE, and EET</li>
+            <li>Support for Project Infinity</li>
+          </ul>
+      </section>
+    </main>
+  </body>
+</html>

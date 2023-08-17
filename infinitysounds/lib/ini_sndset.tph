@@ -1,0 +1,122 @@
+DEFINE_PATCH_FUNCTION pch_ini_sndset BEGIN
+  PATCH_IF (VARIABLE_IS_SET attack) BEGIN
+    REPLACE_TEXTUALLY ~^\(attack=\).*$~ ~\1%attack%~
+  END
+  PATCH_IF (VARIABLE_IS_SET attack_frame) BEGIN
+    REPLACE_TEXTUALLY ~^\(attack_frame=\).*$~ ~\1%attack_frame%~
+  END
+  PATCH_IF (VARIABLE_IS_SET awake) BEGIN
+    REPLACE_TEXTUALLY ~^\(awake=\).*$~ ~\1%awake%~
+  END
+  PATCH_IF (VARIABLE_IS_SET awake_frame) BEGIN
+    REPLACE_TEXTUALLY ~^\(awake_frame=\).*$~ ~\1%awake_frame%~
+  END
+  PATCH_IF (VARIABLE_IS_SET cast) BEGIN
+    REPLACE_TEXTUALLY ~^\(cast=\).*$~ ~\1%cast%~
+  END
+  PATCH_IF (VARIABLE_IS_SET cast_frame) BEGIN
+    REPLACE_TEXTUALLY ~^\(cast_frame=\).*$~ ~\1%cast_frame%~
+  END
+  PATCH_IF (VARIABLE_IS_SET conjure) BEGIN
+    REPLACE_TEXTUALLY ~^\(conjure=\).*$~ ~\1%conjure%~
+  END
+  PATCH_IF (VARIABLE_IS_SET conjure_frame) BEGIN
+    REPLACE_TEXTUALLY ~^\(conjure_frame=\).*$~ ~\1%conjure_frame%~
+  END
+  PATCH_IF (VARIABLE_IS_SET damage) BEGIN
+    REPLACE_TEXTUALLY ~^\(damage=\).*$~ ~\1%damage%~
+  END
+  PATCH_IF (VARIABLE_IS_SET damage_frame) BEGIN
+    REPLACE_TEXTUALLY ~^\(damage_frame=\).*$~ ~\1%damage_frame%~
+  END
+  PATCH_IF (VARIABLE_IS_SET die) BEGIN
+    REPLACE_TEXTUALLY ~^\(die=\).*$~ ~\1%die%~
+  END
+  PATCH_IF (VARIABLE_IS_SET die_frame) BEGIN
+    REPLACE_TEXTUALLY ~^\(die_frame=\).*$~ ~\1%die_frame%~
+  END
+  PATCH_IF (VARIABLE_IS_SET head_turn) BEGIN
+    REPLACE_TEXTUALLY ~^\(head_turn=\).*$~ ~\1%head_turn%~
+  END
+  PATCH_IF (VARIABLE_IS_SET head_turn_frame) BEGIN
+    REPLACE_TEXTUALLY ~^\(head_turn_frame=\).*$~ ~\1%head_turn_frame%~
+  END
+  PATCH_IF (VARIABLE_IS_SET ready) BEGIN
+    REPLACE_TEXTUALLY ~^\(ready=\).*$~ ~\1%ready%~
+  END
+  PATCH_IF (VARIABLE_IS_SET ready_frame) BEGIN
+    REPLACE_TEXTUALLY ~^\(ready_frame=\).*$~ ~\1%ready_frame%~
+  END
+  PATCH_IF (VARIABLE_IS_SET shoot) BEGIN
+    REPLACE_TEXTUALLY ~^\(shoot=\).*$~ ~\1%shoot%~
+  END
+  PATCH_IF (VARIABLE_IS_SET shoot_frame) BEGIN
+    REPLACE_TEXTUALLY ~^\(shoot_frame=\).*$~ ~\1%shoot_frame%~
+  END
+  PATCH_IF (VARIABLE_IS_SET twitch) BEGIN
+    REPLACE_TEXTUALLY ~^\(twitch=\).*$~ ~\1%twitch%~
+  END
+  PATCH_IF (VARIABLE_IS_SET twitch_frame) BEGIN
+    REPLACE_TEXTUALLY ~^\(twitch_frame=\).*$~ ~\1%twitch_frame%~
+  END
+  PATCH_IF (VARIABLE_IS_SET walk) BEGIN
+    REPLACE_TEXTUALLY ~^\(walk=\).*$~ ~\1%walk%~
+  END
+  PATCH_IF (VARIABLE_IS_SET walk_frame) BEGIN
+    REPLACE_TEXTUALLY ~^\(walk_frame=\).*$~ ~\1%walk_frame%~
+  END
+  PATCH_IF (VARIABLE_IS_SET attack_slash) BEGIN
+    REPLACE_TEXTUALLY ~^\(attack_slash=\).*$~ ~\1%attack_slash%~
+  END
+  PATCH_IF (VARIABLE_IS_SET attack_slash_frame) BEGIN
+    REPLACE_TEXTUALLY ~^\(attack_slash_frame=\).*$~ ~\1%attack_slash_frame%~
+  END
+  PATCH_IF (VARIABLE_IS_SET attack_backslash) BEGIN
+    REPLACE_TEXTUALLY ~^\(attack_backslash=\).*$~ ~\1%attack_backslash%~
+  END
+  PATCH_IF (VARIABLE_IS_SET attack_backslash_frame) BEGIN
+    REPLACE_TEXTUALLY ~^\(attack_backslash_frame=\).*$~ ~\1%attack_backslash_frame%~
+  END
+  PATCH_IF (VARIABLE_IS_SET attack_jab) BEGIN
+    REPLACE_TEXTUALLY ~^\(attack_jab=\).*$~ ~\1%attack_jab%~
+  END
+  PATCH_IF (VARIABLE_IS_SET attack_jab_frame) BEGIN
+    REPLACE_TEXTUALLY ~^\(attack_jab_frame=\).*$~ ~\1%attack_jab_frame%~
+  END
+  PATCH_IF (VARIABLE_IS_SET emerge) BEGIN
+    REPLACE_TEXTUALLY ~^\(emerge=\).*$~ ~\1%emerge%~
+  END
+  PATCH_IF (VARIABLE_IS_SET emerge_frame) BEGIN
+    REPLACE_TEXTUALLY ~^\(emerge_frame=\).*$~ ~\1%emerge_frame%~
+  END
+  PATCH_IF (VARIABLE_IS_SET hide) BEGIN
+    REPLACE_TEXTUALLY ~^\(hide=\).*$~ ~\1%hide%~
+  END
+  PATCH_IF (VARIABLE_IS_SET hide_frame) BEGIN
+    REPLACE_TEXTUALLY ~^\(hide_frame=\).*$~ ~\1%hide_frame%~
+  END
+  PATCH_IF (VARIABLE_IS_SET sleep) BEGIN
+    REPLACE_TEXTUALLY ~^\(sleep=\).*$~ ~\1%sleep%~
+  END
+  PATCH_IF (VARIABLE_IS_SET sleep_frame) BEGIN
+    REPLACE_TEXTUALLY ~^\(sleep_frame=\).*$~ ~\1%sleep_frame%~
+  END
+  PATCH_IF (VARIABLE_IS_SET battle_cry) BEGIN
+    REPLACE_TEXTUALLY ~^\(battle_cry=\).*$~ ~\1%battle_cry%~
+  END
+  PATCH_IF (VARIABLE_IS_SET battle_cry_frame) BEGIN
+    REPLACE_TEXTUALLY ~^\(battle_cry_frame=\).*$~ ~\1%battle_cry_frame%~
+  END
+  PATCH_IF (VARIABLE_IS_SET selection) BEGIN
+    REPLACE_TEXTUALLY ~^\(selection=\).*$~ ~\1%selection%~
+  END
+  PATCH_IF (VARIABLE_IS_SET selection_frame) BEGIN
+    REPLACE_TEXTUALLY ~^\(selection_frame=\).*$~ ~\1%selection_frame%~
+  END
+  PATCH_IF (VARIABLE_IS_SET fall) BEGIN
+    REPLACE_TEXTUALLY ~^\(fall=\).*$~ ~\1%fall%~
+  END
+  PATCH_IF (VARIABLE_IS_SET fall_frame) BEGIN
+    REPLACE_TEXTUALLY ~^\(fall_frame=\).*$~ ~\1%fall_frame%~
+  END
+END
