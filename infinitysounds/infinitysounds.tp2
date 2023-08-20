@@ -8987,6 +8987,20 @@ ACTION_IF (GAME_IS ~bgee bg2ee eet~) BEGIN
   OUTER_SET EXISTANCE5 = 0x1c8
 END
 
+// correct BG1 rare selection slots offset references
+ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+  OUTER_SET NSELECT_RARE1 = 0x1d0
+  OUTER_SET NSELECT_RARE2 = 0x1d4
+  OUTER_SET NSELECT_RARE3 = 0x1d8
+  OUTER_SET NSELECT_RARE4 = 0x1dc
+END
+ELSE BEGIN
+  OUTER_SET NSELECT_RARE1 = 0x130
+  OUTER_SET NSELECT_RARE2 = 0x134
+  OUTER_SET NSELECT_RARE3 = 0x138
+  OUTER_SET NSELECT_RARE4 = 0x13c
+END
+
 // patch creature (cre) soundsets
 
 // ankheg
@@ -9133,8 +9147,8 @@ COPY_EXISTING ~amcow.cre~ ~override~ // Cow
   WRITE_LONG DAMAGE         11761 // amb_e42c
   WRITE_LONG SELECT_COMMON1 20318 // amb_e42a "Mooooo"
   WRITE_LONG SELECT_COMMON2 20319 // amb_e42b "Moo"
-  WRITE_LONG SELECT_ACTION4 17121 // amb_e42c "Ouch. I mean moooo."
-  WRITE_LONG SELECT_ACTION5 "-1"
+  WRITE_LONG NSELECT_RARE1  17121 // amb_e42c "Ouch. I mean moooo."
+  WRITE_LONG NSELECT_RARE2  "-1"
   WRITE_LONG EXISTANCE1     19851 // amb_e42a
   WRITE_LONG EXISTANCE2     20281 // amb_e42b
   WRITE_LONG EXISTANCE3     11761 // amb_e42c
@@ -9180,7 +9194,7 @@ COPY_EXISTING ~dopple.cre~  ~override~ // Doppleganger
   WRITE_LONG DYING           5885 // doppl09
   WRITE_LONG SELECT_COMMON1  5166 // doppl02 "SSSSsssssss."
   WRITE_LONG SELECT_COMMON2  5169 // doppl04 "It is useless to resist. SSSssssss."
-  WRITE_LONG SELECT_ACTION4  "-1"
+  WRITE_LONG NSELECT_RARE1   "-1"
 BUT_ONLY IF_EXISTS
 
 // doppleganger_greater
@@ -9205,7 +9219,7 @@ COPY_EXISTING ~dopdop.cre~   ~override~ // Greater Doppleganger
   WRITE_LONG SELECT_COMMON2  5172 // gdopp02 "Give yourself up, your death will be less... painful."
   WRITE_LONG SELECT_COMMON3  "-1"
   WRITE_LONG SELECT_COMMON4  "-1"
-  WRITE_LONG SELECT_ACTION4  "-1"
+  WRITE_LONG NSELECT_RARE1   "-1"
 BUT_ONLY IF_EXISTS
 
 // duergar
@@ -9269,8 +9283,8 @@ COPY_EXISTING ~bgflam6.cre~  ~override~ // Flaming Fist Mercenary
   WRITE_LONG SELECT_COMMON1 4985 // flamn01 "I serve the Flaming Fist!"
   WRITE_LONG SELECT_COMMON2 4987 // flamn03 "Every crime must be punished!"
   WRITE_LONG SELECT_COMMON3 4986 // flamn02 "I AM the law!"
-  WRITE_LONG SELECT_ACTION4 4988 // flamn04 "You there!  Give me fifty pushups!"
-  WRITE_LONG SELECT_ACTION5 "-1"
+  WRITE_LONG NSELECT_RARE1  4988 // flamn04 "You there!  Give me fifty pushups!"
+  WRITE_LONG NSELECT_RARE2  "-1"
 BUT_ONLY IF_EXISTS
 
 // half_ogre
@@ -9278,7 +9292,8 @@ COPY_EXISTING ~ogrebjor.cre~ ~override~ // Half Ogre
               ~ogreha.cre~   ~override~
               ~ogreha_b.cre~ ~override~
   WRITE_LONG SELECT_COMMON2 "-1"
-  WRITE_LONG SELECT_ACTION4 5156 // hogre02 "Buuuurp. Har har -fart-"
+  WRITE_LONG NSELECT_RARE1  5156 // hogre02 "Buuuurp. Har har -fart-"
+  WRITE_LONG EXISTANCE1     "-1"
 BUT_ONLY IF_EXISTS
 
 // horse
@@ -9323,8 +9338,8 @@ COPY_EXISTING ~read.cre~   ~override~ // Reader
               ~read5.cre~  ~override~
               ~read6.cre~  ~override~
               ~bendal.cre~ ~override~ // Bendalis
-  WRITE_LONG SELECT_ACTION4 "-1"
-  WRITE_LONG SELECT_ACTION5 "-1"
+  WRITE_LONG NSELECT_RARE1 "-1"
+  WRITE_LONG NSELECT_RARE2 "-1"
 BUT_ONLY IF_EXISTS
 
 // ogre
@@ -9344,7 +9359,7 @@ COPY_EXISTING ~ogre.cre~     ~override~ // Ogre
               ~sewerf4.cre~  ~override~ // Sewerfolk
               ~ughh.cre~     ~override~ // Ughh
   WRITE_LONG SELECT_COMMON2 "-1"
-  WRITE_LONG SELECT_ACTION4 5851 // ogree02
+  WRITE_LONG NSELECT_RARE1  5851 // ogree02
 BUT_ONLY IF_EXISTS
 
 // peasant_man/static_peasant_man
@@ -9418,7 +9433,7 @@ COPY_EXISTING ~sirine.cre~   ~override~ // Sirine
   WRITE_LONG ATTACK3        "-1"
   WRITE_LONG SELECT_COMMON1 5176 // sirin01 "Fools to cross my path."
   WRITE_LONG SELECT_COMMON2 5178 // sirin07 "Think as you act, fool."
-  WRITE_LONG SELECT_ACTION4 5177 // sirin02 "I'll kill you slow for touching me like that."
+  WRITE_LONG NSELECT_RARE1  5177 // sirin02 "I'll kill you slow for touching me like that."
 BUT_ONLY IF_EXISTS
 
 COPY_EXISTING ~sirine02.cre~ ~override~ // Sirine (temple)
@@ -9663,11 +9678,11 @@ ACTION_IF (GAME_IS ~bgt bgee eet~) BEGIN
   COPY_EXISTING ~mtbe10.cre~ ~override~ // Butler (Mr. Colquetle's)
     WRITE_LONG INITIAL_MEETING 11077 // genmg01 "Yes?"
     WRITE_LONG SELECT_COMMON1  11077 // genmg01 "Yes?"
-    WRITE_LONG SELECT_ACTION4  "-1"
+    WRITE_LONG NSELECT_RARE1   "-1"
   BUT_ONLY IF_EXISTS
 
   COPY_EXISTING ~cadder.cre~ ~override~ // Cadderly
-    WRITE_LONG SELECT_ACTION4 4531 // cader07 "One is not forced to walk in the steps of their father."
+    WRITE_LONG NSELECT_RARE1 4531 // cader07 "One is not forced to walk in the steps of their father."
   BUT_ONLY IF_EXISTS
 
   COPY_EXISTING ~davaeo.cre~ ~override~ // Davaeorn
@@ -9680,7 +9695,7 @@ ACTION_IF (GAME_IS ~bgt bgee eet~) BEGIN
     WRITE_LONG SELECT_COMMON2 4501 // drizzt04 "I am a gentle man at heart. At least, when I'm (...)"
     WRITE_LONG SELECT_COMMON3 4503 // drizzt06 "All this chatter is fine, but I've places I'd rather be."
     WRITE_LONG SELECT_COMMON4 "-1"
-    WRITE_LONG SELECT_ACTION4 4504 // drizzt07 "Don't poke Drizzt. 'Tis entirely unsociable."
+    WRITE_LONG NSELECT_RARE1  4504 // drizzt07 "Don't poke Drizzt. 'Tis entirely unsociable."
   BUT_ONLY IF_EXISTS
 
   COPY_EXISTING ~fearm.cre~  ~override~ // Fear
@@ -9697,10 +9712,10 @@ ACTION_IF (GAME_IS ~bgt bgee eet~) BEGIN
     WRITE_LONG SELECT_COMMON4 "-1"
     WRITE_LONG SELECT_COMMON5 "-1"
     WRITE_LONG SELECT_COMMON6 "-1"
-    WRITE_LONG SELECT_ACTION4 4443 // gorin06 "-cough- -cough- I'm too old for this."
-    WRITE_LONG SELECT_ACTION5 "-1"
-    WRITE_LONG SELECT_ACTION6 "-1"
-    WRITE_LONG SELECT_ACTION7 "-1"
+    WRITE_LONG NSELECT_RARE1  4443 // gorin06 "-cough- -cough- I'm too old for this."
+    WRITE_LONG NSELECT_RARE2  "-1"
+    WRITE_LONG NSELECT_RARE3  "-1"
+    WRITE_LONG NSELECT_RARE4  "-1"
   BUT_ONLY IF_EXISTS
 
   COPY_EXISTING ~greywo.cre~ ~override~ // Greywolf
@@ -9717,7 +9732,7 @@ ACTION_IF (GAME_IS ~bgt bgee eet~) BEGIN
     WRITE_LONG SELECT_COMMON1 4562 // husam04 "-hiccup- I's thinks I hads too much to drinks."
     WRITE_LONG SELECT_COMMON2 4564 // husam06 "Ones day, I'lls have me my's revengsh. Ha ha -hiccup- -burp-"
     WRITE_LONG SELECT_COMMON3 "-1"
-    WRITE_LONG SELECT_ACTION4 4563 // husam05
+    WRITE_LONG NSELECT_RARE1  4563 // husam05
     SAY DYING ~~ [husam11]
     SAY HURT  ~~ [husam10]
   BUT_ONLY IF_EXISTS
@@ -9734,7 +9749,7 @@ ACTION_IF (GAME_IS ~bgt bgee eet~) BEGIN
   BUT_ONLY IF_EXISTS
 
   COPY_EXISTING ~irlent.cre~ ~override~ // Irlentree
-    WRITE_LONG SELECT_ACTION4 4712 // irlen02 "I have no wish to speak with you, meat."
+    WRITE_LONG NSELECT_RARE1 4712 // irlen02 "I have no wish to speak with you, meat."
   BUT_ONLY IF_EXISTS
 
   COPY_EXISTING ~jalant.cre~  ~override~ // Jalantha Mistmyr
@@ -9777,8 +9792,8 @@ ACTION_IF (GAME_IS ~bgt bgee eet~) BEGIN
   COPY_EXISTING ~nikola.cre~ ~override~ // Nikolai
     WRITE_LONG SELECT_COMMON1 11148 // manco01 "Glad to meet you, friend."
     WRITE_LONG SELECT_COMMON2 "-1"
-    WRITE_LONG SELECT_ACTION4 "-1"
-    WRITE_LONG SELECT_ACTION5 "-1"
+    WRITE_LONG NSELECT_RARE1  "-1"
+    WRITE_LONG NSELECT_RARE2  "-1"
   BUT_ONLY IF_EXISTS
 
   COPY_EXISTING ~oogiew.cre~ ~override~ // Oogie Wisham
@@ -9817,7 +9832,7 @@ ACTION_IF (GAME_IS ~bgt bgee eet~) BEGIN
   BUT_ONLY IF_EXISTS
 
   COPY_EXISTING ~silke.cre~ ~override~ // Silke
-    WRITE_LONG SELECT_ACTION4 4697 // silke02 "I am a musician, not a chatter box."
+    WRITE_LONG NSELECT_RARE1 4697 // silke02 "I am a musician, not a chatter box."
   BUT_ONLY IF_EXISTS
 
   COPY_EXISTING ~slythe.cre~ ~override~ // Slythe
@@ -9835,15 +9850,17 @@ ACTION_IF (GAME_IS ~bgt bgee eet~) BEGIN
                 ~bgtazok.cre~ ~override~
     READ_SLONG SELECT_COMMON1 common1
     PATCH_IF (common1 > 0) BEGIN
+      WRITE_LONG MORALE         4467 // tazok02 "The longer the fight, the sweeter your blood when I kill you!"
       WRITE_LONG BATTLE_CRY2    4467 // tazok02 "The longer the fight, the sweeter your blood when I kill you!"
       WRITE_LONG BATTLE_CRY3    4469 // tazok04 "No begging's gonna help you now!"
       WRITE_LONG BATTLE_CRY4    4471 // tazok06 "Maybe you will stay quiet when you're dead!"
       WRITE_LONG SELECT_COMMON2 4467 // tazok02 "The longer the fight, the sweeter your blood when I kill you!"
       WRITE_LONG SELECT_COMMON3 4468 // tazok03 "I will have your head!"
       WRITE_LONG SELECT_COMMON4 4471 // tazok06 "Maybe you will stay quiet when you're dead!"
-      WRITE_LONG SELECT_ACTION4 4470 // tazok05 "Oh sure! Touch me like you know me! Now I kill you twice!"
-      WRITE_LONG SELECT_ACTION5 4472 // tazok07 "Do I LOOK like I enjoy being prodded by strangers? Stow (...)"
-      WRITE_LONG SELECT_ACTION6 "-1"
+      WRITE_LONG NSELECT_RARE1  4470 // tazok05 "Oh sure! Touch me like you know me! Now I kill you twice!"
+      WRITE_LONG NSELECT_RARE2  4472 // tazok07 "Do I LOOK like I enjoy being prodded by strangers? Stow (...)"
+      WRITE_LONG NSELECT_RARE3  "-1"
+      WRITE_LONG EXISTANCE1     "-1"
     END
   BUT_ONLY IF_EXISTS
 
@@ -9851,8 +9868,8 @@ ACTION_IF (GAME_IS ~bgt bgee eet~) BEGIN
     WRITE_LONG MORALE         4520 // volo02 "This is not my day at all!"
     WRITE_LONG SELECT_COMMON3 "-1"
     WRITE_LONG SELECT_COMMON4 "-1"
-    WRITE_LONG SELECT_ACTION4 4524 // volo06 "Awfully familiar with that pointer, aren't you? And after (...)"
-    WRITE_LONG SELECT_ACTION5 4525 // volo07 "I've a story for every man, woman, and child in Faur'n (...)"
+    WRITE_LONG NSELECT_RARE1  4524 // volo06 "Awfully familiar with that pointer, aren't you? And after (...)"
+    WRITE_LONG NSELECT_RARE2  4525 // volo07 "I've a story for every man, woman, and child in Faur'n (...)"
   BUT_ONLY IF_EXISTS
 
   COPY_EXISTING ~watch.cre~  ~override~ // Watcher
@@ -9864,23 +9881,23 @@ ACTION_IF (GAME_IS ~bgt bgee eet~) BEGIN
     PATCH_IF (common1 == 4964) BEGIN
       WRITE_LONG SELECT_COMMON2 4963 // guarr01 "-Yawn-"
     END
-    WRITE_LONG SELECT_ACTION4   4965 // guarr03 "Today I saw a girl with the biggest pair of diddeys (...)"
-    WRITE_LONG SELECT_ACTION5   4966 // guarr04 "I could take Drizzt wit both my arms tied behind my back."
+    WRITE_LONG NSELECT_RARE1    4965 // guarr03 "Today I saw a girl with the biggest pair of diddeys (...)"
+    WRITE_LONG NSELECT_RARE2    4966 // guarr04 "I could take Drizzt wit both my arms tied behind my back."
   BUT_ONLY IF_EXISTS
 
   COPY_EXISTING ~innke2.cre~  ~override~ // Winthrop
                 ~winthr2.cre~ ~override~
                 ~winthr3.cre~ ~override~ // Winthrop (Doppleganger)
-    READ_SLONG SELECT_ACTION7 rare4
+    READ_SLONG NSELECT_RARE4 rare4
     WRITE_LONG SELECT_COMMON2 "-1"
     WRITE_LONG SELECT_COMMON3 "-1"
     WRITE_LONG SELECT_COMMON4 "-1"
-    WRITE_LONG SELECT_ACTION4 "-1"
-    WRITE_LONG SELECT_ACTION5 "-1"
-    WRITE_LONG SELECT_ACTION6 "-1"
+    WRITE_LONG NSELECT_RARE1  "-1"
+    WRITE_LONG NSELECT_RARE2  "-1"
+    WRITE_LONG NSELECT_RARE3  "-1"
     PATCH_IF (rare4 == 5166) BEGIN
-      WRITE_LONG SELECT_ACTION4 5166 // doppl02 "SSSSsssssss."
-      WRITE_LONG SELECT_ACTION7 "-1"
+      WRITE_LONG NSELECT_RARE1 5166 // doppl02 "SSSSsssssss."
+      WRITE_LONG NSELECT_RARE4 "-1"
     END
   BUT_ONLY IF_EXISTS
 END
