@@ -646,12 +646,19 @@ END
 
 // Restore Gulp Sound
 BEGIN @160 DESIGNATED 160 LABEL ~s@-IS-Gulp-Sound~
-REQUIRE_PREDICATE (!GAME_IS ~bgt bgee bg2ee eet~) @5
-REQUIRE_PREDICATE (GAME_IS ~tob~) && (!GAME_IS ~bgt~) @1
+REQUIRE_PREDICATE (!GAME_IS ~bgt bg2ee eet~) @5
+REQUIRE_PREDICATE (GAME_IS ~tob bgee~) && (!GAME_IS ~bgt~) @1
 
-PRINT @2 SILENT
+PRINT @4 SILENT
 
-COPY ~infinitysounds/copy/wav/gulp.wav~ ~override~
+ACTION_IF (!FILE_EXISTS_IN_GAME ~gulp.wav~) BEGIN
+  COPY ~infinitysounds/copy/wav/gulp.wav~ ~override~
+END
+
+ACTION_IF (GAME_IS ~bgee~) BEGIN
+  ACTION_GET_STRREF 16233 string // "Gulp!"
+  STRING_SET 16233 ~%string%~ [gulp]
+END
 
 // Restore Chunked Death Sound
 BEGIN @170 DESIGNATED 170 LABEL ~s@-IS-Chunked-Death-Sound~
