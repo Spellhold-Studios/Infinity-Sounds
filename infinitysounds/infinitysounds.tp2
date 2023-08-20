@@ -632,17 +632,12 @@ COPY ~infinitysounds/copy/wav/paper.wav~ ~override~
 // Restore BG1 PC Soundsets
 BEGIN @150 DESIGNATED 150 LABEL ~s@-IS-BG1-PC-Soundsets~
 REQUIRE_PREDICATE (!GAME_IS ~bgt bgee eet~) @5
-REQUIRE_PREDICATE (GAME_IS ~tob bg2ee~) && (!GAME_IS ~bgt~) @1
+REQUIRE_PREDICATE (GAME_IS ~tob~) && (!GAME_IS ~bgt~) @1
 REQUIRE_PREDICATE (~%LANGUAGE%~ STR_EQ ~en-us~) @6
 
 PRINT @2 SILENT
 
-ACTION_IF (GAME_IS ~bg2ee~) BEGIN
-  COPY ~infinitysounds/copy/wav/150_pc~ ~lang/%LANGUAGE%/sounds~
-END
-ELSE BEGIN
-  COPY ~infinitysounds/copy/wav/150_pc~ ~sounds~
-END
+COPY ~infinitysounds/copy/wav/150_pc~ ~sounds~
 
 // Restore Gulp Sound
 BEGIN @160 DESIGNATED 160 LABEL ~s@-IS-Gulp-Sound~
