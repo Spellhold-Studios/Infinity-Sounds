@@ -1,6 +1,6 @@
 BACKUP  ~infinitysounds/backup~
 SUPPORT ~https://github.com/skellytz/infinity-sounds/issues~
-VERSION ~v2.0~
+VERSION ~v2.0.1~
 README  ~infinitysounds/lang/%LANGUAGE%/readme-infinitysounds.html~ ~infinitysounds/readme-infinitysounds.html~
 AUTO_EVAL_STRINGS
 ASK_EVERY_COMPONENT
@@ -9953,237 +9953,6 @@ ACTION_IF (GAME_IS ~tob bg2ee eet~) BEGIN
     WRITE_LONG SELECT_COMMON2  "-1"
   BUT_ONLY IF_EXISTS
 
-  ACTION_IF (FILE_EXISTS ~infinitysounds/lang/%LANGUAGE%/dialogue.tra~) BEGIN
-    WITH_TRA ~infinitysounds/lang/%LANGUAGE%/dialogue.tra~ BEGIN
-      COPY_EXISTING ~celogan.cre~ ~override~ // High Merchant Logan Coprith
-        SAY BATTLE_CRY2      @100
-        SAY BATTLE_CRY3      @101
-        SAY SELECT_COMMON2   @102
-        SAY SELECT_COMMON3   @103
-        SAY SELECT_COMMON4   @104
-        SAY DIALOGUE_HOSTILE @105
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~cor.cre~ ~override~ // Cor Delryn
-        SAY MORALE           @106
-        SAY BATTLE_CRY2      @107
-        SAY BATTLE_CRY3      @108
-        SAY SELECT_COMMON2   @109
-        SAY SELECT_COMMON3   @110
-        SAY SELECT_COMMON4   @111
-        SAY DIALOGUE_HOSTILE @112
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~firkra01.cre~ ~override~ // Lord Jierdan
-        WRITE_LONG INITIAL_MEETING        60510 // firkra01 "Oh, bother..."
-        WRITE_LONG UNHAPPY_BREAKING_POINT "-1"
-        WRITE_LONG SELECT_COMMON1         60510 // firkra01 "Oh, bother..."
-        SAY MORALE           @113
-        SAY BATTLE_CRY1      @114
-        SAY BATTLE_CRY2      @115
-        SAY SELECT_COMMON2   @116
-        SAY SELECT_COMMON3   @117
-        SAY SELECT_COMMON4   @118
-        SAY DIALOGUE_HOSTILE @119
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~csgaal.cre~ ~override~ // Gaal
-                    ~gaal01.cre~ ~override~
-                    ~gaal02.cre~ ~override~
-        SAY MORALE           @120
-        SAY BATTLE_CRY3      @121
-        SAY BATTLE_CRY4      @122
-        SAY SELECT_COMMON2   @123
-        SAY SELECT_COMMON3   @124
-        SAY SELECT_COMMON4   @125
-        SAY DIALOGUE_HOSTILE @126
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~habrega.cre~ ~override~ // Chief Inspector Brega
-        SAY BATTLE_CRY2      @127
-        SAY BATTLE_CRY3      @128
-        SAY SELECT_COMMON2   @129
-        SAY SELECT_COMMON3   @130
-        SAY DIALOGUE_HOSTILE @131
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~isaea.cre~ ~override~ // Isaea Roenali
-        SAY MORALE           @132
-        SAY BATTLE_CRY2      @133
-        SAY BATTLE_CRY3      @134
-        SAY SELECT_COMMON2   @135
-        SAY SELECT_COMMON3   @136
-        SAY SELECT_COMMON4   @137
-        SAY DIALOGUE_HOSTILE @138
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~jadermin.cre~ ~override~ // Dermin Courtierdale
-        SAY DIALOGUE_HOSTILE @139
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~jatermin.cre~ ~override~ // Terminsel
-        SAY BATTLE_CRY3      @140
-        SAY SELECT_COMMON2   @141
-        SAY SELECT_COMMON3   @142
-        SAY SELECT_COMMON4   @143
-        SAY DIALOGUE_HOSTILE @144
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~lehtin.cre~ ~override~ // Lehtinan
-        SAY MORALE           @145
-        SAY BATTLE_CRY2      @146
-        SAY BATTLE_CRY3      @147
-        SAY SELECT_COMMON2   @148
-        SAY SELECT_COMMON3   @149
-        SAY SELECT_COMMON4   @150
-        SAY DIALOGUE_HOSTILE @151
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~sctelwyn.cre~ ~override~ // Guardian Telwyn
-        SAY MORALE           @152
-        SAY BATTLE_CRY2      @153
-        SAY BATTLE_CRY3      @154
-        SAY SELECT_COMMON2   @155
-        SAY SELECT_COMMON3   @156
-        SAY SELECT_COMMON4   @157
-        SAY DIALOGUE_HOSTILE @158
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~shthlt02.cre~ ~override~ // Lathan
-        SAY MORALE           @159
-        SAY BATTLE_CRY2      @160
-        SAY BATTLE_CRY3      @161
-        SAY SELECT_COMMON2   @162
-        SAY SELECT_COMMON3   @163
-        SAY SELECT_COMMON4   @164
-        SAY DIALOGUE_HOSTILE @165
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~trhmer01.cre~ ~override~ // Guildmistress Busya
-        SAY MORALE           @166
-        SAY BATTLE_CRY3      @167
-        SAY BATTLE_CRY4      @168
-        SAY SELECT_COMMON2   @169
-        SAY SELECT_COMMON3   @170
-        SAY SELECT_COMMON4   @171
-        SAY DIALOGUE_HOSTILE @172
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~udsvir03.cre~ ~override~ // Goldander Blackenrock
-        WRITE_LONG UNHAPPY_BREAKING_POINT "-1"
-        WRITE_LONG BATTLE_CRY1    60460 // goldan03 "The stones shall have you!"
-        WRITE_LONG BATTLE_CRY2    60461 // goldan04 "Protect the granitehomes!"
-        WRITE_LONG DAMAGE         60462 // goldan05
-        WRITE_LONG DYING          60463 // goldan06
-        WRITE_LONG SELECT_COMMON3 "-1"
-        WRITE_LONG SELECT_COMMON4 "-1"
-        SAY MORALE           @173
-        SAY INITIAL_MEETING  @174
-        SAY BATTLE_CRY3      @175
-        SAY BATTLE_CRY4      @176
-        SAY SELECT_COMMON1   @177
-        SAY SELECT_COMMON2   @178
-        SAY DIALOGUE_HOSTILE @179
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~baronp.cre~ ~override~ // Baron Ployer
-        SAY MORALE           @180
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~cefald01.cre~ ~override~ // Faldorn
-                    ~cefald04.cre~ ~override~
-                    ~cefaldor.cre~ ~override~
-        SAY MORALE           @181
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~delcia.cre~ ~override~ // Lady Delcia Caan
-        SAY MORALE           @182
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~sudemin.cre~ ~override~ // Priestess Demin
-        SAY MORALE           @183
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~demson.cre~ ~override~ // Sir William Reirrac
-        SAY MORALE           @184
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~ppdesh.cre~  ~override~ // Desharik
-                    ~ppdesh2.cre~ ~override~
-        SAY MORALE           @185
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~c6elhan.cre~ ~override~ // Elhan
-                    ~c6fake.cre~  ~override~
-                    ~suelhan.cre~ ~override~
-        SAY MORALE           @186
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~suelle.cre~   ~override~ // Ellesime
-                    ~suelle2.cre~  ~override~
-                    ~suelleap.cre~ ~override~
-        SAY MORALE           @187
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~garren.cre~ ~override~ // Garren Windspear
-        SAY MORALE           @188
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~shthlt01.cre~ ~override~ // Jariel
-        SAY MORALE           @189
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~kalah.cre~ ~override~ // Kalah
-        SAY MORALE           @190
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~kayl1.cre~ ~override~ // Sir Ryan Trawl
-                    ~kayl2.cre~ ~override~
-        SAY MORALE           @191
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~kpdomo01.cre~ ~override~ // Major Domo
-        SAY MORALE           @192
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~lavok01.cre~ ~override~ // Lavok
-                    ~lavok02.cre~ ~override~
-        SAY MORALE           @193
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~maria.cre~ ~override~ // Lady Maria
-        SAY MORALE           @194
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~bhnalla.cre~ ~override~ // Stormherald Nallabir
-                    ~nalla.cre~   ~override~
-        SAY MORALE           @195
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~bhoisig.cre~ ~override~ // High Watcher Oisig
-                    ~oisig.cre~   ~override~
-        SAY MORALE           @196
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~udphae01.cre~ ~override~ // Phaere
-                    ~udphae02.cre~ ~override~
-        SAY MORALE           @197
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~rielev.cre~ ~override~ // Rielev
-        SAY MORALE           @198
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~bharval.cre~ ~override~ // High Mornmaster Arval
-        SAY MORALE           @199
-      BUT_ONLY IF_EXISTS
-
-      COPY_EXISTING ~trgeni01.cre~ ~override~ // Khan Zahraa
-        SAY MORALE           @200
-      BUT_ONLY IF_EXISTS
-    END
-  END
-
   // restore these strrefs as morale break NPC sounds
   ACTION_DEFINE_ASSOCIATIVE_ARRAY ary_restore_morale_strrefs BEGIN
      4474 => 1
@@ -11336,43 +11105,276 @@ BUT_ONLY IF_EXISTS
 BEGIN @265 DESIGNATED 265 LABEL ~s@-IS-Restore-NPC-Voiceovers~
 REQUIRE_PREDICATE (GAME_IS ~tob bg2ee eet~) @1
 REQUIRE_PREDICATE (~%LANGUAGE%~ STR_EQ ~en-us~) @6
-REQUIRE_PREDICATE (!MOD_IS_INSTALLED ~bg2gtueestyle.tp2~ ~0~) @12
 
 PRINT @4 SILENT
 
-COPY ~infinitysounds/copy/wav/265_vo~ ~override~
+ACTION_IF (!MOD_IS_INSTALLED ~bg2gtueestyle.tp2~ ~0~) BEGIN
+  COPY ~infinitysounds/copy/wav/265_vo~ ~override~
 
-ACTION_DEFINE_ASSOCIATIVE_ARRAY ary_restore_unused_vos BEGIN
-    118 => raelis19 // "Ah, Mekrath's prize! (...)"
-    124 => raelis19 // "Ah, Mekrath's prize! (...)"
-   6879 => edwin84  // "Ahh HA! I understand it! (...)"
-   9174 => keldor87 // "I mean no dishonor to you (...)"
-  11626 => rielev07 // "Neither, neither. I am... between (...)"
-  16783 => cscow101 // "You will cease all hostilities! (...)"
-  20866 => gaelen10 // "Well, now, that be right amazing. (...)"
-  21512 => bodhix15 // "I would offer an alternative. (...)"
-  26394 => tanner08 // "No, I won't be doing that. (...)"
-  31828 => kaylxx08 // "Then you are due your just reward. (...)"
-  35558 => anomen81 // "My Test is coming very soon, my lady. (...)"
-  36461 => gaelen33 // "Here, a key to the Shadowmaster. (...)"
-  36714 => raelis19 // "Ah, Mekrath's prize! (...)"
-  42339 => teosxx08 // "That is good. His disappearance will (...)"
-  49061 => bodhix17 // "I will take the 15000 gold now (...)"
-  59166 => bodhix40 // "Your part in this ends here (...)"
-  64660 => sarevo75 // "So? Have you discovered your way out (...)"
-  65963 => 2love03  // "J-jaheira?  Is...is that you?"
-  66130 => hgnya12  // "Soooo...changes your mind, haves you? (...)"
-  66582 => 1amerc09 // "You? You bought our stuff?"
-  66585 => 1amerc10 // "Hey, yeah... those weapons look mighty (...)"
-  66586 => 2amerc10 // "And those boots look just like the ones (...)"
-  69773 => aeri2510 // "It's a boy! Oh, what a beautiful son (...)"
-  72927 => amcler03 // "Fight the good fight!"
-  73100 => senpri04
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY ary_restore_unused_vos BEGIN
+      118 => raelis19 // "Ah, Mekrath's prize! (...)"
+      124 => raelis19 // "Ah, Mekrath's prize! (...)"
+     6879 => edwin84  // "Ahh HA! I understand it! (...)"
+     9174 => keldor87 // "I mean no dishonor to you (...)"
+    11626 => rielev07 // "Neither, neither. I am... between (...)"
+    16783 => cscow101 // "You will cease all hostilities! (...)"
+    20866 => gaelen10 // "Well, now, that be right amazing. (...)"
+    21512 => bodhix15 // "I would offer an alternative. (...)"
+    26394 => tanner08 // "No, I won't be doing that. (...)"
+    31828 => kaylxx08 // "Then you are due your just reward. (...)"
+    35558 => anomen81 // "My Test is coming very soon, my lady. (...)"
+    36461 => gaelen33 // "Here, a key to the Shadowmaster. (...)"
+    36714 => raelis19 // "Ah, Mekrath's prize! (...)"
+    42339 => teosxx08 // "That is good. His disappearance will (...)"
+    49061 => bodhix17 // "I will take the 15000 gold now (...)"
+    59166 => bodhix40 // "Your part in this ends here (...)"
+    64660 => sarevo75 // "So? Have you discovered your way out (...)"
+    65963 => 2love03  // "J-jaheira?  Is...is that you?"
+    66130 => hgnya12  // "Soooo...changes your mind, haves you? (...)"
+    66582 => 1amerc09 // "You? You bought our stuff?"
+    66585 => 1amerc10 // "Hey, yeah... those weapons look mighty (...)"
+    66586 => 2amerc10 // "And those boots look just like the ones (...)"
+    69773 => aeri2510 // "It's a boy! Oh, what a beautiful son (...)"
+    72927 => amcler03 // "Fight the good fight!"
+    73100 => senpri04
+  END
+
+  ACTION_PHP_EACH ary_restore_unused_vos AS string => sound BEGIN
+    ACTION_GET_STRREF string text
+    STRING_SET_EVALUATE string ~%text%~ [%sound%]
+  END
 END
 
-ACTION_PHP_EACH ary_restore_unused_vos AS string => sound BEGIN
-  ACTION_GET_STRREF string text
-  STRING_SET_EVALUATE string ~%text%~ [%sound%]
+// restore unused NPC sounds and subtitles
+ACTION_IF (FILE_EXISTS ~infinitysounds/lang/%LANGUAGE%/dialogue.tra~) BEGIN
+  WITH_TRA ~infinitysounds/lang/%LANGUAGE%/dialogue.tra~ BEGIN
+    COPY_EXISTING ~celogan.cre~ ~override~ // High Merchant Logan Coprith
+      SAY BATTLE_CRY2      @100
+      SAY BATTLE_CRY3      @101
+      SAY SELECT_COMMON2   @102
+      SAY SELECT_COMMON3   @103
+      SAY SELECT_COMMON4   @104
+      SAY DIALOGUE_HOSTILE @105
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~cor.cre~ ~override~ // Cor Delryn
+      SAY MORALE           @106
+      SAY BATTLE_CRY2      @107
+      SAY BATTLE_CRY3      @108
+      SAY SELECT_COMMON2   @109
+      SAY SELECT_COMMON3   @110
+      SAY SELECT_COMMON4   @111
+      SAY DIALOGUE_HOSTILE @112
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~firkra01.cre~ ~override~ // Lord Jierdan
+      WRITE_LONG INITIAL_MEETING        60510 // firkra01 "Oh, bother..."
+      WRITE_LONG UNHAPPY_BREAKING_POINT "-1"
+      WRITE_LONG SELECT_COMMON1         60510 // firkra01 "Oh, bother..."
+      SAY MORALE           @113
+      SAY BATTLE_CRY1      @114
+      SAY BATTLE_CRY2      @115
+      SAY SELECT_COMMON2   @116
+      SAY SELECT_COMMON3   @117
+      SAY SELECT_COMMON4   @118
+      SAY DIALOGUE_HOSTILE @119
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~csgaal.cre~ ~override~ // Gaal
+                  ~gaal01.cre~ ~override~
+                  ~gaal02.cre~ ~override~
+      SAY MORALE           @120
+      SAY BATTLE_CRY3      @121
+      SAY BATTLE_CRY4      @122
+      SAY SELECT_COMMON2   @123
+      SAY SELECT_COMMON3   @124
+      SAY SELECT_COMMON4   @125
+      SAY DIALOGUE_HOSTILE @126
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~habrega.cre~ ~override~ // Chief Inspector Brega
+      SAY BATTLE_CRY2      @127
+      SAY BATTLE_CRY3      @128
+      SAY SELECT_COMMON2   @129
+      SAY SELECT_COMMON3   @130
+      SAY DIALOGUE_HOSTILE @131
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~isaea.cre~ ~override~ // Isaea Roenali
+      SAY MORALE           @132
+      SAY BATTLE_CRY2      @133
+      SAY BATTLE_CRY3      @134
+      SAY SELECT_COMMON2   @135
+      SAY SELECT_COMMON3   @136
+      SAY SELECT_COMMON4   @137
+      SAY DIALOGUE_HOSTILE @138
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~jadermin.cre~ ~override~ // Dermin Courtierdale
+      SAY DIALOGUE_HOSTILE @139
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~jatermin.cre~ ~override~ // Terminsel
+      SAY BATTLE_CRY3      @140
+      SAY SELECT_COMMON2   @141
+      SAY SELECT_COMMON3   @142
+      SAY SELECT_COMMON4   @143
+      SAY DIALOGUE_HOSTILE @144
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~lehtin.cre~ ~override~ // Lehtinan
+      SAY MORALE           @145
+      SAY BATTLE_CRY2      @146
+      SAY BATTLE_CRY3      @147
+      SAY SELECT_COMMON2   @148
+      SAY SELECT_COMMON3   @149
+      SAY SELECT_COMMON4   @150
+      SAY DIALOGUE_HOSTILE @151
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~sctelwyn.cre~ ~override~ // Guardian Telwyn
+      SAY MORALE           @152
+      SAY BATTLE_CRY2      @153
+      SAY BATTLE_CRY3      @154
+      SAY SELECT_COMMON2   @155
+      SAY SELECT_COMMON3   @156
+      SAY SELECT_COMMON4   @157
+      SAY DIALOGUE_HOSTILE @158
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~shthlt02.cre~ ~override~ // Lathan
+      SAY MORALE           @159
+      SAY BATTLE_CRY2      @160
+      SAY BATTLE_CRY3      @161
+      SAY SELECT_COMMON2   @162
+      SAY SELECT_COMMON3   @163
+      SAY SELECT_COMMON4   @164
+      SAY DIALOGUE_HOSTILE @165
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~trhmer01.cre~ ~override~ // Guildmistress Busya
+      SAY MORALE           @166
+      SAY BATTLE_CRY3      @167
+      SAY BATTLE_CRY4      @168
+      SAY SELECT_COMMON2   @169
+      SAY SELECT_COMMON3   @170
+      SAY SELECT_COMMON4   @171
+      SAY DIALOGUE_HOSTILE @172
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~udsvir03.cre~ ~override~ // Goldander Blackenrock
+      WRITE_LONG UNHAPPY_BREAKING_POINT "-1"
+      WRITE_LONG BATTLE_CRY1    60460 // goldan03 "The stones shall have you!"
+      WRITE_LONG BATTLE_CRY2    60461 // goldan04 "Protect the granitehomes!"
+      WRITE_LONG DAMAGE         60462 // goldan05
+      WRITE_LONG DYING          60463 // goldan06
+      WRITE_LONG SELECT_COMMON3 "-1"
+      WRITE_LONG SELECT_COMMON4 "-1"
+      SAY MORALE           @173
+      SAY INITIAL_MEETING  @174
+      SAY BATTLE_CRY3      @175
+      SAY BATTLE_CRY4      @176
+      SAY SELECT_COMMON1   @177
+      SAY SELECT_COMMON2   @178
+      SAY DIALOGUE_HOSTILE @179
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~baronp.cre~ ~override~ // Baron Ployer
+      SAY MORALE           @180
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~cefald01.cre~ ~override~ // Faldorn
+                  ~cefald04.cre~ ~override~
+                  ~cefaldor.cre~ ~override~
+      SAY MORALE           @181
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~delcia.cre~ ~override~ // Lady Delcia Caan
+      SAY MORALE           @182
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~sudemin.cre~ ~override~ // Priestess Demin
+      SAY MORALE           @183
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~demson.cre~ ~override~ // Sir William Reirrac
+      SAY MORALE           @184
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~ppdesh.cre~  ~override~ // Desharik
+                  ~ppdesh2.cre~ ~override~
+      SAY MORALE           @185
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~c6elhan.cre~ ~override~ // Elhan
+                  ~c6fake.cre~  ~override~
+                  ~suelhan.cre~ ~override~
+      SAY MORALE           @186
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~suelle.cre~   ~override~ // Ellesime
+                  ~suelle2.cre~  ~override~
+                  ~suelleap.cre~ ~override~
+      SAY MORALE           @187
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~garren.cre~ ~override~ // Garren Windspear
+      SAY MORALE           @188
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~shthlt01.cre~ ~override~ // Jariel
+      SAY MORALE           @189
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~kalah.cre~ ~override~ // Kalah
+      SAY MORALE           @190
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~kayl1.cre~ ~override~ // Sir Ryan Trawl
+                  ~kayl2.cre~ ~override~
+      SAY MORALE           @191
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~kpdomo01.cre~ ~override~ // Major Domo
+      SAY MORALE           @192
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~lavok01.cre~ ~override~ // Lavok
+                  ~lavok02.cre~ ~override~
+      SAY MORALE           @193
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~maria.cre~ ~override~ // Lady Maria
+      SAY MORALE           @194
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~bhnalla.cre~ ~override~ // Stormherald Nallabir
+                  ~nalla.cre~   ~override~
+      SAY MORALE           @195
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~bhoisig.cre~ ~override~ // High Watcher Oisig
+                  ~oisig.cre~   ~override~
+      SAY MORALE           @196
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~udphae01.cre~ ~override~ // Phaere
+                  ~udphae02.cre~ ~override~
+      SAY MORALE           @197
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~rielev.cre~ ~override~ // Rielev
+      SAY MORALE           @198
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~bharval.cre~ ~override~ // High Mornmaster Arval
+      SAY MORALE           @199
+    BUT_ONLY IF_EXISTS
+
+    COPY_EXISTING ~trgeni01.cre~ ~override~ // Khan Zahraa
+      SAY MORALE           @200
+    BUT_ONLY IF_EXISTS
+  END
 END
 
 // Additional NPC Voiceovers (by Salk)
