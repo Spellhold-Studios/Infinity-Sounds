@@ -1,6 +1,6 @@
 # Infinity Sounds
 
-[<img src="https://skellytz.github.io/style/buttons/download.svg" height="32">](https://github.com/skellytz/infinity-sounds/releases)&nbsp;&nbsp;&nbsp;&nbsp;[<img src="https://skellytz.github.io/style/buttons/readme.svg" height="32">](https://skellytz.github.io/docs/readme-infinitysounds.html)&nbsp;&nbsp;&nbsp;&nbsp;[<img src="https://skellytz.github.io/style/buttons/forum.svg" height="32">](http://www.shsforums.net/topic/59358-infinity-sounds-v2-beta/)&nbsp;&nbsp;&nbsp;&nbsp;[<img src="https://skellytz.github.io/style/buttons/webpage.svg" height="32">](http://www.shsforums.net/files/file/1081-infinity-sounds/)<br><br>
+[<img src="https://skellytz.github.io/style/buttons/download.svg" height="32">](https://github.com/skellytz/infinity-sounds/releases)&nbsp;&nbsp;&nbsp;&nbsp;[<img src="https://skellytz.github.io/style/buttons/readme.svg" height="32">](https://skellytz.github.io/docs/readme-infinitysounds.html)&nbsp;&nbsp;&nbsp;&nbsp;[<img src="https://skellytz.github.io/style/buttons/forum.svg" height="32">](http://www.shsforums.net/forum/688-infinity-sounds/)&nbsp;&nbsp;&nbsp;&nbsp;[<img src="https://skellytz.github.io/style/buttons/webpage.svg" height="32">](http://www.shsforums.net/files/file/1286-infinity-sounds/)<br><br>
 
 ## Introduction
 
