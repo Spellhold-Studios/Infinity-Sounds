@@ -53,14 +53,24 @@ In a nutshell, Infinity Sounds is a mod for Baldur's Gate II which aims to impro
 
 ## Credits
 
-&nbsp;&nbsp; **Authors**  
-&nbsp;&nbsp; skellytz  
-&nbsp;&nbsp; Tash
+#### Authors
 
-&nbsp;&nbsp; **Contributors**  
-&nbsp;&nbsp; Salk &nbsp;&ndash;&nbsp; component "Additional NPC Voiceovers"
+- skellytz
+- Tash
 
-&nbsp;&nbsp; **Voiceover artists**  
-&nbsp;&nbsp; [@alfonsogiansa](https://www.fiverr.com/alfonsogiansa) &nbsp;&ndash;&nbsp; Captain Samand  
-&nbsp;&nbsp; [@livingsamantha](https://www.fiverr.com/livingsamantha) &nbsp;&ndash;&nbsp; Countess Santele  
-&nbsp;&nbsp; [@slipstreamer](https://www.fiverr.com/slipstreamer) &nbsp;&ndash;&nbsp; Mateo
+#### Contributors
+
+- Salk &nbsp;&ndash;&nbsp; component "Additional NPC Voiceovers"
+
+#### Voiceover artists
+
+- [@alfonsogiansa](https://www.fiverr.com/alfonsogiansa) &nbsp;&ndash;&nbsp; Captain Samand
+- [@livingsamantha](https://www.fiverr.com/livingsamantha) &nbsp;&ndash;&nbsp; Countess Santele
+- [@slipstreamer](https://www.fiverr.com/slipstreamer) &nbsp;&ndash;&nbsp; Mateo
+
+#### Special thanks
+
+- Andrea C. for extensive beta-testing, bug reports, and tons of invaluable feedback.
+- Insomniator for receiving the suggestions and adding the requested features to TobEx AfterLife.
+- Salk for testing since the earliest version, hiring the voiceover artists, and offering the additional voiceovers to be part of this mod.
+- Everyone from [Spellhold Studios](http://www.shsforums.net/), [The Gibberlings Three](https://www.gibberlings3.net/forums), [Pocket Plane Group](https://forums.pocketplane.net/), and other modding communities for keeping the Infinity Engine running.
