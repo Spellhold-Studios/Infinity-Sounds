@@ -53,22 +53,24 @@ In a nutshell, Infinity Sounds is a mod for Baldur's Gate II which aims to impro
 
 ## Credits
 
-#### Authors
+<!-- double white space after each credits **Heading** -->
+
+**Authors**  
 
 - skellytz
 - Tash
 
-#### Contributors
+**Contributors**  
 
 - Salk &nbsp;&ndash;&nbsp; component "Additional NPC Voiceovers"
 
-#### Voiceover artists
+**Voiceover artists**  
 
 - [@alfonsogiansa](https://www.fiverr.com/alfonsogiansa) &nbsp;&ndash;&nbsp; Captain Samand
 - [@livingsamantha](https://www.fiverr.com/livingsamantha) &nbsp;&ndash;&nbsp; Countess Santele
 - [@slipstreamer](https://www.fiverr.com/slipstreamer) &nbsp;&ndash;&nbsp; Mateo
 
-#### Special thanks
+**Special thanks**  
 
 - Andrea C. for extensive beta-testing, bug reports, and tons of invaluable feedback.
 - Insomniator for receiving the suggestions and adding the requested features to TobEx AfterLife.
