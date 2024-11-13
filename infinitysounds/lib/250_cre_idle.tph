@@ -1,799 +1,801 @@
 // allowed creatures with existance sounds
-aegnoll.cre
-airaspec.cre
-amcow.cre
-amwenc01.cre
-amwyvern.cre
-andars.cre
-ankheg.cre
-ankheg01.cre
-ankhegg.cre
-ankhegq.cre
-ardeno.cre
-arghai.cre
-arghh.cre
-ashiru.cre
-banshe01.cre
-bart10.cre
-bart11.cre
-bart12.cre
-bart13.cre
-bart14.cre
-bart15.cre
-bart16.cre
-bart2.cre
-bart3.cre
-bart4.cre
-bart5.cre
-bart6.cre
-bart7.cre
-bart8.cre
-bart9.cre
-baruk.cre
-basgrt01.cre
-basilg.cre
-basilgsu.cre
-basill.cre
-basillsu.cre
-basilmut.cre
-basilnad.cre
-basles01.cre
-bassil.cre
-bat_door.cre
-bat_in.cre
-bat_out.cre
-batin01.cre
-batout01.cre
-battho.cre
-bbegg1.cre
-bdabibla.cre
-bdabigre.cre
-bdabired.cre
-bdabis1d.cre
-bdabis2d.cre
-bdabis3d.cre
-bdbeetbh.cre
-bdbeetbm.cre
-bdbeetbr.cre
-bdbeetfm.cre
-bdbeetmh.cre
-bdbeetrh.cre
-bdbronze.cre
-bddanc01.cre
-bddevil1.cre
-bddevil2.cre
-bdfinhep.cre
-bdgob04.cre
-bdhamatu.cre
-bdraggem.cre
-bdsentry.cre
-bdwisp01.cre
-bearbl.cre
-bearbl01.cre
-bearblsu.cre
-bearbr.cre
-bearbr01.cre
-bearbrsu.cre
-bearca.cre
-bearca01.cre
-bearcasu.cre
-beargr.cre
-beargrsu.cre
-bearpo.cre
-bearpo01.cre
-bearpo1.cre
-bearpo2.cre
-bearpo3.cre
-bearposu.cre
-begbax_a.cre
-begbax_b.cre
-begbax_c.cre
-begbax_d.cre
-beggar1.cre
-beggar2.cre
-beggba.cre
-beggba_a.cre
-beggba_b.cre
-beggba_c.cre
-beggba_d.cre
-beggbax.cre
-beggna.cre
-bgbasill.cre
-bgftown2.cre
-bgghast.cre
-bgknigh1.cre
-bgmtown2.cre
-bgstalke.cre
-bgtazok.cre
-bgtowncr.cre
-bgwolf.cre
-bgwowegr.cre
-bhghoul1.cre
-bhghoul2.cre
-bhghoul3.cre
-bhghoul4.cre
-bhghoul5.cre
-bhobgob.cre
-bird.cre
-bird_in.cre
-bird_ine.cre
-bird_inn.cre
-bird_ins.cre
-bird_inw.cre
-boo.cre
-boyba1.cre
-boyba1_c.cre
-boyba3_a.cre
-boybax_a.cre
-boybe1.cre
-bprost1.cre
-bprost2.cre
-britik.cre
-bubbles.cre
-bullrush.cre
-bwench.cre
-c6guen.cre
-c6guen2.cre
-cantic.cre
-carcra01.cre
-carrio.cre
-carriosu.cre
-cat.cre
-catche01.cre
-catdead.cre
-catjag01.cre
-catjagsu.cre
-catjagwp.cre
-catleo01.cre
-catlim01.cre
-catlio01.cre
-catliosu.cre
-catliowp.cre
-catlis01.cre
-catlyn01.cre
-catp.cre
-catpan01.cre
-cattac.cre
-cattig01.cre
-cavene.cre
-cefald02.cre
-chante.cre
-chante2.cre
-chess.cre
-chevil02.cre
-chevil05.cre
-chherd.cre
-chickdef.cre
-chicke.cre
-chicker.cre
-chilna.cre
-chilna_b.cre
-chilna_c.cre
-chimp5.cre
-coplion.cre
-cory.cre
-cow.cre
-cowh.cre
-cpchick1.cre
-cpchick2.cre
-crowen01.cre
-cryptcra.cre
-d2dop.cre
-dadog.cre
-dagnoll.cre
-daitel.cre
-darryl2.cre
-davaeo.cre
-dbeggar2.cre
-deathk.cre
-deathk1.cre
-deltan2.cre
-demosum1.cre
-dharlot1.cre
-dilak.cre
-dink.cre
-dmstore.cre
-dogblink.cre
-dogwa.cre
-dogwar01.cre
-dogwasu.cre
-dogwawp.cre
-dogwi.cre
-dogwil01.cre
-dogwisu.cre
-doomdur.cre
-doomgu.cre
-doomsa.cre
-dopdop.cre
-dopgre01.cre
-dopmgr01.cre
-doppgr.cre
-doppl7.cre
-dopple.cre
-dopple01.cre
-doppss.cre
-dopzorl.cre
-drpar2.cre
-drpar3.cre
-drpar4.cre
-drpar5.cre
-drpar6.cre
-drunk.cre
-drunk1.cre
-drunk2.cre
-dryadha.cre
-duplica2.cre
-duplica3.cre
-duplica4.cre
-duplica5.cre
-duplica6.cre
-durlagt.cre
-eagle.cre
-escort1.cre
-escort1a.cre
-escort4.cre
-etter01.cre
-etterc.cre
-etterc1.cre
-ettercsu.cre
-faber.cre
-fafight.cre
-famcat.cre
-famcat25.cre
-famcat_.cre
-famdog.cre
-famfai25.cre
-famfair.cre
-famfair_.cre
-fampsd.cre
-fampsd25.cre
-fampsd_.cre
-famwar.cre
-farm3.cre
-fearm.cre
-flind.cre
-flind_a.cre
-flind_b.cre
-flind_c.cre
-friwen.cre
-fsdog.cre
-fsmumm.cre
-fsmumm2.cre
-fsmumm3.cre
-ftobe6.cre
-ftowb5.cre
-ftowba_b.cre
-ftowbasc.cre
-ftowbax.cre
-ftowbe_a.cre
-ftowfr_a.cre
-ftowfr_d.cre
-ftowfrsn.cre
-ftown2.cre
-ftown2_.cre
-ftowna.cre
-ftowna_d.cre
-ftowna_e.cre
-ftownasc.cre
-ftwbax_b.cre
-games.cre
-games2.cre
-games3.cre
-games4.cre
-gantol.cre
-garkla.cre
-gbegg01.cre
-gdopp7.cre
-gdopp71.cre
-gdopp72.cre
-gdopp73.cre
-gdopp74.cre
-gdopp75.cre
-geltik.cre
-gemch01.cre
-gemch02.cre
-ghast.cre
-ghast01.cre
-ghastd.cre
-ghastf01.cre
-ghastgsu.cre
-ghasts.cre
-ghogr01.cre
-gholor01.cre
-ghorak.cre
-ghoul.cre
-ghoul01.cre
-ghoullor.cre
-ghoulsu.cre
-girba1.cre
-girba3_a.cre
-girba3_d.cre
-girbax_b.cre
-girbax_e.cre
-girlbe.cre
-glanma.cre
-glart.cre
-glbear2.cre
-gmayor.cre
-gnlcap01.cre
-gnleli01.cre
-gnlfli01.cre
-gnlsla01.cre
-gnlvet01.cre
-gnlwar01.cre
-gnoll.cre
-gnoll01.cre
-gnoll02.cre
-gnoll03.cre
-gnoll04.cre
-gnoll05.cre
-gnoll2.cre
-gnoll3.cre
-gnoll5.cre
-gnoll5a.cre
-gnoll_a.cre
-gnoll_b.cre
-gnoll_c.cre
-gnoll_d.cre
-gnoll_e.cre
-gnolld.cre
-gnollhp1.cre
-gnollper.cre
-gnollsu.cre
-gooddeat.cre
-gorcamb6.cre
-gorcamb7.cre
-gordem2.cre
-gorjelf2.cre
-gorjelfu.cre
-gorjelgr.cre
-gorsnake.cre
-gorwom03.cre
-gpdog1.cre
-grael.cre
-gron.cre
-gtcit1.cre
-gtcit2.cre
-gtcit3.cre
-gtcit4.cre
-gtcit5.cre
-guarca.cre
-guard.cre
-gurke.cre
-hack.cre
-hakt.cre
-halfg3.cre
-hellho01.cre
-hellil01.cre
-helmho.cre
-hentol.cre
-hephis.cre
-hgfel01.cre
-hgsal01.cre
-hobeli01.cre
-hobelite.cre
-hobgo2.cre
-hobgo3.cre
-hobgo4.cre
-hobgo5.cre
-hobgo6.cre
-hobgoa_a.cre
-hobgoa_b.cre
-hobgoa_c.cre
-hobgoa_d.cre
-hobgoa_e.cre
-hobgob.cre
-hobgob03.cre
-hobgob04.cre
-hobgob05.cre
-hobgob_a.cre
-hobgob_b.cre
-hobgob_c.cre
-hobgob_d.cre
-hobgob_e.cre
-hobgoba.cre
-hobgobc.cre
-hobgobsu.cre
-hobgod.cre
-hobgzhur.cre
-hobjoia.cre
-horse.cre
-hull.cre
-hull2.cre
-hull3.cre
-ichary.cre
-icsalcol.cre
-icsalfir.cre
-ignati.cre
-ihobgob.cre
-ike.cre
-ike2.cre
-ingot.cre
-iron12.cre
-iron5.cre
-iron9.cre
-ironho.cre
-ironm4.cre
-isla.cre
-islsir.cre
-itasloi.cre
-jaguarsu.cre
-jamie.cre
-jelgra01.cre
-jelgre01.cre
-jellgr.cre
-jellmu.cre
-jellmul.cre
-jellmusu.cre
-jelloc.cre
-jellspa.cre
-jellygr.cre
-jellygr2.cre
-jellymu.cre
-jelmus01.cre
-jeloch01.cre
-kahrk.cre
-kaishwlf.cre
-kaldran.cre
-kelzomb.cre
-kiel.cre
-kiel2.cre
-knight1.cre
-knight1_.cre
-knight2.cre
-knight3.cre
-knight4.cre
-knight5.cre
-knight6.cre
-kovera.cre
-kpdog01.cre
-kpdog02.cre
-kpdog03.cre
-kpdog04.cre
-krotan.cre
-kylee.cre
-lacedo01.cre
-lacedo02.cre
-lachlu.cre
-larze.cre
-lowlgu.cre
-ltalos.cre
-lussel.cre
-malkal.cre
-malkax.cre
-mane.cre
-marvin.cre
-meiala.cre
-melica.cre
-melsum05.cre
-merc.cre
-minec2.cre
-minec3.cre
-minec4.cre
-minec5.cre
-minerc.cre
-moose.cre
-moose01.cre
-mtbe11.cre
-mtbe6.cre
-mtob3.cre
-mtob9.cre
-mtowba_a.cre
-mtowbasc.cre
-mtowbe_a.cre
-mtowbesn.cre
-mtowfr_a.cre
-mtowfrsn.cre
-mtown2.cre
-mtown2_.cre
-mtowna_a.cre
-mtownasc.cre
-mtowubsc.cre
-mtowwi_a.cre
-mtwbax_a.cre
-mtwslim.cre
-mumgre01.cre
-mummy.cre
-mummy01.cre
-murdgirl.cre
-mysmer.cre
-nbearbl.cre
-nbearbr.cre
-ncat.cre
-nchick.cre
-ncow.cre
-ndog.cre
-nessie.cre
-nevm3.cre
-nevm5.cre
-nhorse.cre
-nwolf.cre
-nwyvbab.cre
-obsdem02.cre
-obsdem04.cre
-obsfir05.cre
-obsice03.cre
-obsice04.cre
-ogre.cre
-ogre02.cre
-ogre03.cre
-ogre04.cre
-ogre05.cre
-ogre_a.cre
-ogre_b.cre
-ogre_c.cre
-ogre_d.cre
-ogreberz.cre
-ogrebjor.cre
-ogred.cre
-ogreha.cre
-ogreha1.cre
-ogreha2.cre
-ogreha3.cre
-ogreha4.cre
-ogreha5.cre
-ogreha_a.cre
-ogreha_b.cre
-ogreha_c.cre
-ogreha_d.cre
-ogreha_e.cre
-ogres.cre
-ogreunsh.cre
-oogiew.cre
-oopah.cre
-oopah2.cre
-palkni03.cre
-palkni05.cre
-phaers.cre
-phanda.cre
-pheoarch.cre
-pheogurd.cre
-phoenix.cre
-pircor01.cre
-pircor02.cre
-pircor04.cre
-plybass.cre
-plyflind.cre
-plyogre.cre
-plysala.cre
-plyspid.cre
-plywolf.cre
-plywyvrn.cre
-pnashk.cre
-pnask.cre
-polycarr.cre
-polyochr.cre
-polyrat.cre
-priilm.cre
-priilmu.cre
-prison.cre
-prosba.cre
-prosba_a.cre
-prosba_b.cre
-prosba_c.cre
-prosbax.cre
-proslay.cre
-prost4.cre
-prost5.cre
-prost6.cre
-prost7.cre
-prost8.cre
-prsbax_a.cre
-prsbax_b.cre
-prsbax_c.cre
-pudden01.cre
-pudden02.cre
-pwyvv01.cre
-quaylem.cre
-quenas.cre
-rat.cre
-rat2.cre
-revent.cre
-riftcr01.cre
-riftcr03.cre
-rsdtroll.cre
-rufie.cre
-rzomb01.cre
-sahangu.cre
-sahlace.cre
-sahzom01.cre
-sahzomb.cre
-sailal.cre
-sailfin.cre
-sailjos.cre
-sailned.cre
-sailnew.cre
-salgrfir.cre
-salgrice.cre
-samuel.cre
-sarbar02.cre
-sarevo.cre
-sarevo2.cre
-sbwench.cre
-schlum.cre
-seagul.cre
-senani01.cre
-senani03.cre
-senspi01.cre
-servwg.cre
-serwen.cre
-sewcc.cre
-sewerc.cre
-sewerf2.cre
-sewerf3.cre
-sewerf4.cre
-sil.cre
-silvgu.cre
-sirine.cre
-sirine01.cre
-sirine02.cre
-sirine_a.cre
-sirine_b.cre
-slave.cre
-slave2.cre
-slave3.cre
-slave4.cre
-slave5.cre
-slave6.cre
-slcat.cre
-sleepdw.cre
-sleepel.cre
-sleepfat.cre
-sleepfh.cre
-sleephal.cre
-sleepmh.cre
-slifis01.cre
-slifis02.cre
-smspid02.cre
-snake01.cre
-snakeb01.cre
-snakeg01.cre
-solia1.cre
-solia2.cre
-spidfgsu.cre
-spidgi.cre
-spidgi.cre
-spidgi01.cre
-spidgisu.cre
-spidhu.cre
-spidhu01.cre
-spidland.cre
-spidph.cre
-spidph01.cre
-spidphas.cre
-spidphsu.cre
-spidsw.cre
-spidsw01.cre
-spidswsu.cre
-spidvo01.cre
-spidwr.cre
-spidwr01.cre
-spirbear.cre
-spirlion.cre
-spirsnak.cre
-spspid05.cre
-spspid06.cre
-spspid07.cre
-squirl.cre
-squirr.cre
-stalke.cre
-stalke_.cre
-sugar.cre
-tanar.cre
-tanar2.cre
-taslgurk.cre
-tasloi.cre
-tasloi02.cre
-tasloi03.cre
-tasloisu.cre
-tazok.cre
-tazok2.cre
-tazok_.cre
-telicesa.cre
-tepid.cre
-tersus.cre
-theshal.cre
-tipian.cre
-towncr.cre
-towncr_.cre
-tranim01.cre
-tranim03.cre
-tranzi.cre
-trevil04.cre
-trevil05.cre
-trollgi.cre
-trwen01.cre
-ttspid.cre
-ubmalka2.cre
-ubmalkal.cre
-ubsvlrev.cre
-uddog.cre
-udslv03.cre
-udspid01.cre
-udspid02.cre
-udspid03.cre
-udspid04.cre
-udspid05.cre
-udspid06.cre
-udspid07.cre
-udspid08.cre
-ughh.cre
-uhogre04.cre
-ulcast.cre
-ursa.cre
-vbearbl.cre
-vbearbr.cre
-vbearca.cre
-velvet.cre
-voice.cre
-voieas.cre
-voinor.cre
-voisou.cre
-voiwes.cre
-volose.cre
-vorsquir.cre
-vultur.cre
-vulture.cre
-watch2.cre
-waukleo.cre
-waukmoo.cre
-wauksna.cre
-wauksqu.cre
-welt.cre
-wench1.cre
-werewo.cre
-werewogr.cre
-whelp.cre
-wolf.cre
-wolf01.cre
-wolfch.cre
-wolfchar.cre
-wolfd1.cre
-wolfdi.cre
-wolfdi01.cre
-wolfdisu.cre
-wolfdr.cre
-wolfdr01.cre
-wolfsu.cre
-wolfva.cre
-wolfva01.cre
-wolfwe.cre
-wolfwegl.cre
-wolfwegr.cre
-wolfwi.cre
-wolfwi01.cre
-wolfwisu.cre
-wolfwo01.cre
-wolfwwsu.cre
-wolfzo01.cre
-worg.cre
-worgar.cre
-worgsu.cre
-wpcust2.cre
-wpwench1.cre
-wraithsu.cre
-wrmons01.cre
-wyvbab01.cre
-wyverba.cre
-wyvern.cre
-wyvern01.cre
-wyvernbi.cre
-wyvernsu.cre
-wyvgre01.cre
-xghast1.cre
-xghast2.cre
-zargal.cre
-zekar.cre
-zeke.cre
-zombie.cre
-zombie01.cre
-zombie_a.cre
-zombie_b.cre
-zombie_c.cre
-zombie_d.cre
-zombie_e.cre
-zombieb.cre
-zombiew.cre
-zombju01.cre
-zomblo01.cre
-zombse01.cre
+ACTION_DEFINE_ARRAY ary_cre_idle BEGIN
+  aegnoll
+  airaspec
+  amcow
+  amwenc01
+  amwyvern
+  andars
+  ankheg
+  ankheg01
+  ankhegg
+  ankhegq
+  ardeno
+  arghai
+  arghh
+  ashiru
+  banshe01
+  bart10
+  bart11
+  bart12
+  bart13
+  bart14
+  bart15
+  bart16
+  bart2
+  bart3
+  bart4
+  bart5
+  bart6
+  bart7
+  bart8
+  bart9
+  baruk
+  basgrt01
+  basilg
+  basilgsu
+  basill
+  basillsu
+  basilmut
+  basilnad
+  basles01
+  bassil
+  bat_door
+  bat_in
+  bat_out
+  batin01
+  batout01
+  battho
+  bbegg1
+  bdabibla
+  bdabigre
+  bdabired
+  bdabis1d
+  bdabis2d
+  bdabis3d
+  bdbeetbh
+  bdbeetbm
+  bdbeetbr
+  bdbeetfm
+  bdbeetmh
+  bdbeetrh
+  bdbronze
+  bddanc01
+  bddevil1
+  bddevil2
+  bdfinhep
+  bdgob04
+  bdhamatu
+  bdraggem
+  bdsentry
+  bdwisp01
+  bearbl
+  bearbl01
+  bearblsu
+  bearbr
+  bearbr01
+  bearbrsu
+  bearca
+  bearca01
+  bearcasu
+  beargr
+  beargrsu
+  bearpo
+  bearpo01
+  bearpo1
+  bearpo2
+  bearpo3
+  bearposu
+  begbax_a
+  begbax_b
+  begbax_c
+  begbax_d
+  beggar1
+  beggar2
+  beggba
+  beggba_a
+  beggba_b
+  beggba_c
+  beggba_d
+  beggbax
+  beggna
+  bgbasill
+  bgftown2
+  bgghast
+  bgknigh1
+  bgmtown2
+  bgstalke
+  bgtazok
+  bgtowncr
+  bgwolf
+  bgwowegr
+  bhghoul1
+  bhghoul2
+  bhghoul3
+  bhghoul4
+  bhghoul5
+  bhobgob
+  bird
+  bird_in
+  bird_ine
+  bird_inn
+  bird_ins
+  bird_inw
+  boo
+  boyba1
+  boyba1_c
+  boyba3_a
+  boybax_a
+  boybe1
+  bprost1
+  bprost2
+  britik
+  bubbles
+  bullrush
+  bwench
+  c6guen
+  c6guen2
+  cantic
+  carcra01
+  carrio
+  carriosu
+  cat
+  catche01
+  catdead
+  catjag01
+  catjagsu
+  catjagwp
+  catleo01
+  catlim01
+  catlio01
+  catliosu
+  catliowp
+  catlis01
+  catlyn01
+  catp
+  catpan01
+  cattac
+  cattig01
+  cavene
+  cefald02
+  chante
+  chante2
+  chess
+  chevil02
+  chevil05
+  chherd
+  chickdef
+  chicke
+  chicker
+  chilna
+  chilna_b
+  chilna_c
+  chimp5
+  coplion
+  cory
+  cow
+  cowh
+  cpchick1
+  cpchick2
+  crowen01
+  cryptcra
+  d2dop
+  dadog
+  dagnoll
+  daitel
+  darryl2
+  davaeo
+  dbeggar2
+  deathk
+  deathk1
+  deltan2
+  demosum1
+  dharlot1
+  dilak
+  dink
+  dmstore
+  dogblink
+  dogwa
+  dogwar01
+  dogwasu
+  dogwawp
+  dogwi
+  dogwil01
+  dogwisu
+  doomdur
+  doomgu
+  doomsa
+  dopdop
+  dopgre01
+  dopmgr01
+  doppgr
+  doppl7
+  dopple
+  dopple01
+  doppss
+  dopzorl
+  drpar2
+  drpar3
+  drpar4
+  drpar5
+  drpar6
+  drunk
+  drunk1
+  drunk2
+  dryadha
+  duplica2
+  duplica3
+  duplica4
+  duplica5
+  duplica6
+  durlagt
+  eagle
+  escort1
+  escort1a
+  escort4
+  etter01
+  etterc
+  etterc1
+  ettercsu
+  faber
+  fafight
+  famcat
+  famcat25
+  famcat_
+  famdog
+  famfai25
+  famfair
+  famfair_
+  fampsd
+  fampsd25
+  fampsd_
+  famwar
+  farm3
+  fearm
+  flind
+  flind_a
+  flind_b
+  flind_c
+  friwen
+  fsdog
+  fsmumm
+  fsmumm2
+  fsmumm3
+  ftobe6
+  ftowb5
+  ftowba_b
+  ftowbasc
+  ftowbax
+  ftowbe_a
+  ftowfr_a
+  ftowfr_d
+  ftowfrsn
+  ftown2
+  ftown2_
+  ftowna
+  ftowna_d
+  ftowna_e
+  ftownasc
+  ftwbax_b
+  games
+  games2
+  games3
+  games4
+  gantol
+  garkla
+  gbegg01
+  gdopp7
+  gdopp71
+  gdopp72
+  gdopp73
+  gdopp74
+  gdopp75
+  geltik
+  gemch01
+  gemch02
+  ghast
+  ghast01
+  ghastd
+  ghastf01
+  ghastgsu
+  ghasts
+  ghogr01
+  gholor01
+  ghorak
+  ghoul
+  ghoul01
+  ghoullor
+  ghoulsu
+  girba1
+  girba3_a
+  girba3_d
+  girbax_b
+  girbax_e
+  girlbe
+  glanma
+  glart
+  glbear2
+  gmayor
+  gnlcap01
+  gnleli01
+  gnlfli01
+  gnlsla01
+  gnlvet01
+  gnlwar01
+  gnoll
+  gnoll01
+  gnoll02
+  gnoll03
+  gnoll04
+  gnoll05
+  gnoll2
+  gnoll3
+  gnoll5
+  gnoll5a
+  gnoll_a
+  gnoll_b
+  gnoll_c
+  gnoll_d
+  gnoll_e
+  gnolld
+  gnollhp1
+  gnollper
+  gnollsu
+  gooddeat
+  gorcamb6
+  gorcamb7
+  gordem2
+  gorjelf2
+  gorjelfu
+  gorjelgr
+  gorsnake
+  gorwom03
+  gpdog1
+  grael
+  gron
+  gtcit1
+  gtcit2
+  gtcit3
+  gtcit4
+  gtcit5
+  guarca
+  guard
+  gurke
+  hack
+  hakt
+  halfg3
+  hellho01
+  hellil01
+  helmho
+  hentol
+  hephis
+  hgfel01
+  hgsal01
+  hobeli01
+  hobelite
+  hobgo2
+  hobgo3
+  hobgo4
+  hobgo5
+  hobgo6
+  hobgoa_a
+  hobgoa_b
+  hobgoa_c
+  hobgoa_d
+  hobgoa_e
+  hobgob
+  hobgob03
+  hobgob04
+  hobgob05
+  hobgob_a
+  hobgob_b
+  hobgob_c
+  hobgob_d
+  hobgob_e
+  hobgoba
+  hobgobc
+  hobgobsu
+  hobgod
+  hobgzhur
+  hobjoia
+  horse
+  hull
+  hull2
+  hull3
+  ichary
+  icsalcol
+  icsalfir
+  ignati
+  ihobgob
+  ike
+  ike2
+  ingot
+  iron12
+  iron5
+  iron9
+  ironho
+  ironm4
+  isla
+  islsir
+  itasloi
+  jaguarsu
+  jamie
+  jelgra01
+  jelgre01
+  jellgr
+  jellmu
+  jellmul
+  jellmusu
+  jelloc
+  jellspa
+  jellygr
+  jellygr2
+  jellymu
+  jelmus01
+  jeloch01
+  kahrk
+  kaishwlf
+  kaldran
+  kelzomb
+  kiel
+  kiel2
+  knight1
+  knight1_
+  knight2
+  knight3
+  knight4
+  knight5
+  knight6
+  kovera
+  kpdog01
+  kpdog02
+  kpdog03
+  kpdog04
+  krotan
+  kylee
+  lacedo01
+  lacedo02
+  lachlu
+  larze
+  lowlgu
+  ltalos
+  lussel
+  malkal
+  malkax
+  mane
+  marvin
+  meiala
+  melica
+  melsum05
+  merc
+  minec2
+  minec3
+  minec4
+  minec5
+  minerc
+  moose
+  moose01
+  mtbe11
+  mtbe6
+  mtob3
+  mtob9
+  mtowba_a
+  mtowbasc
+  mtowbe_a
+  mtowbesn
+  mtowfr_a
+  mtowfrsn
+  mtown2
+  mtown2_
+  mtowna_a
+  mtownasc
+  mtowubsc
+  mtowwi_a
+  mtwbax_a
+  mtwslim
+  mumgre01
+  mummy
+  mummy01
+  murdgirl
+  mysmer
+  nbearbl
+  nbearbr
+  ncat
+  nchick
+  ncow
+  ndog
+  nessie
+  nevm3
+  nevm5
+  nhorse
+  nwolf
+  nwyvbab
+  obsdem02
+  obsdem04
+  obsfir05
+  obsice03
+  obsice04
+  ogre
+  ogre02
+  ogre03
+  ogre04
+  ogre05
+  ogre_a
+  ogre_b
+  ogre_c
+  ogre_d
+  ogreberz
+  ogrebjor
+  ogred
+  ogreha
+  ogreha1
+  ogreha2
+  ogreha3
+  ogreha4
+  ogreha5
+  ogreha_a
+  ogreha_b
+  ogreha_c
+  ogreha_d
+  ogreha_e
+  ogres
+  ogreunsh
+  oogiew
+  oopah
+  oopah2
+  palkni03
+  palkni05
+  phaers
+  phanda
+  pheoarch
+  pheogurd
+  phoenix
+  pircor01
+  pircor02
+  pircor04
+  plybass
+  plyflind
+  plyogre
+  plysala
+  plyspid
+  plywolf
+  plywyvrn
+  pnashk
+  pnask
+  polycarr
+  polyochr
+  polyrat
+  priilm
+  priilmu
+  prison
+  prosba
+  prosba_a
+  prosba_b
+  prosba_c
+  prosbax
+  proslay
+  prost4
+  prost5
+  prost6
+  prost7
+  prost8
+  prsbax_a
+  prsbax_b
+  prsbax_c
+  pudden01
+  pudden02
+  pwyvv01
+  quaylem
+  quenas
+  rat
+  rat2
+  revent
+  riftcr01
+  riftcr03
+  rsdtroll
+  rufie
+  rzomb01
+  sahangu
+  sahlace
+  sahzom01
+  sahzomb
+  sailal
+  sailfin
+  sailjos
+  sailned
+  sailnew
+  salgrfir
+  salgrice
+  samuel
+  sarbar02
+  sarevo
+  sarevo2
+  sbwench
+  schlum
+  seagul
+  senani01
+  senani03
+  senspi01
+  servwg
+  serwen
+  sewcc
+  sewerc
+  sewerf2
+  sewerf3
+  sewerf4
+  sil
+  silvgu
+  sirine
+  sirine01
+  sirine02
+  sirine_a
+  sirine_b
+  slave
+  slave2
+  slave3
+  slave4
+  slave5
+  slave6
+  slcat
+  sleepdw
+  sleepel
+  sleepfat
+  sleepfh
+  sleephal
+  sleepmh
+  slifis01
+  slifis02
+  smspid02
+  snake01
+  snakeb01
+  snakeg01
+  solia1
+  solia2
+  spidfgsu
+  spidgi
+  spidgi
+  spidgi01
+  spidgisu
+  spidhu
+  spidhu01
+  spidland
+  spidph
+  spidph01
+  spidphas
+  spidphsu
+  spidsw
+  spidsw01
+  spidswsu
+  spidvo01
+  spidwr
+  spidwr01
+  spirbear
+  spirlion
+  spirsnak
+  spspid05
+  spspid06
+  spspid07
+  squirl
+  squirr
+  stalke
+  stalke_
+  sugar
+  tanar
+  tanar2
+  taslgurk
+  tasloi
+  tasloi02
+  tasloi03
+  tasloisu
+  tazok
+  tazok2
+  tazok_
+  telicesa
+  tepid
+  tersus
+  theshal
+  tipian
+  towncr
+  towncr_
+  tranim01
+  tranim03
+  tranzi
+  trevil04
+  trevil05
+  trollgi
+  trwen01
+  ttspid
+  ubmalka2
+  ubmalkal
+  ubsvlrev
+  uddog
+  udslv03
+  udspid01
+  udspid02
+  udspid03
+  udspid04
+  udspid05
+  udspid06
+  udspid07
+  udspid08
+  ughh
+  uhogre04
+  ulcast
+  ursa
+  vbearbl
+  vbearbr
+  vbearca
+  velvet
+  voice
+  voieas
+  voinor
+  voisou
+  voiwes
+  volose
+  vorsquir
+  vultur
+  vulture
+  watch2
+  waukleo
+  waukmoo
+  wauksna
+  wauksqu
+  welt
+  wench1
+  werewo
+  werewogr
+  whelp
+  wolf
+  wolf01
+  wolfch
+  wolfchar
+  wolfd1
+  wolfdi
+  wolfdi01
+  wolfdisu
+  wolfdr
+  wolfdr01
+  wolfsu
+  wolfva
+  wolfva01
+  wolfwe
+  wolfwegl
+  wolfwegr
+  wolfwi
+  wolfwi01
+  wolfwisu
+  wolfwo01
+  wolfwwsu
+  wolfzo01
+  worg
+  worgar
+  worgsu
+  wpcust2
+  wpwench1
+  wraithsu
+  wrmons01
+  wyvbab01
+  wyverba
+  wyvern
+  wyvern01
+  wyvernbi
+  wyvernsu
+  wyvgre01
+  xghast1
+  xghast2
+  zargal
+  zekar
+  zeke
+  zombie
+  zombie01
+  zombie_a
+  zombie_b
+  zombie_c
+  zombie_d
+  zombie_e
+  zombieb
+  zombiew
+  zombju01
+  zomblo01
+  zombse01
+END
