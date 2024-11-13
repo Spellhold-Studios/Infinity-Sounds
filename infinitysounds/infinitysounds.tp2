@@ -6,44 +6,28 @@ AUTO_EVAL_STRINGS
 ASK_EVERY_COMPONENT
 
 ALWAYS
-  ACTION_DEFINE_ARRAY ary_charsets_noconvert BEGIN setup    END
-  ACTION_DEFINE_ARRAY ary_charsets_reload    BEGIN dialogue END
-
-  LAF HANDLE_CHARSETS
-    INT_VAR
-      infer_charsets    = 1
-      from_utf8         = 1
-    STR_VAR
-      default_language  = ~english~
-      tra_path          = ~infinitysounds/lang~
-      out_path          = ~weidu_external/infinitysounds/lang~
-      noconvert_array   = ~ary_charsets_noconvert~
-      reload_array      = ~ary_charsets_reload~
-  END
+  OUTER_TEXT_SPRINT MOD_FOLDER  ~infinitysounds~
+  OUTER_TEXT_SPRINT WORK_FOLDER ~weidu_external/infinitysounds~
 END
 
 LANGUAGE ~English~
          ~english~
          ~infinitysounds/lang/english/setup.tra~
-         ~infinitysounds/lang/english/dialogue.tra~
+
 LANGUAGE ~German~
          ~german~
          ~infinitysounds/lang/english/setup.tra~
-         ~infinitysounds/lang/english/dialogue.tra~
          ~infinitysounds/lang/german/setup.tra~
-         ~infinitysounds/lang/german/dialogue.tra~
+
 LANGUAGE ~Polish~
          ~polish~
          ~infinitysounds/lang/english/setup.tra~
-         ~infinitysounds/lang/english/dialogue.tra~
          ~infinitysounds/lang/polish/setup.tra~
-         ~infinitysounds/lang/polish/dialogue.tra~
+
 LANGUAGE ~Russian~
          ~russian~
          ~infinitysounds/lang/english/setup.tra~
-         ~infinitysounds/lang/english/dialogue.tra~
          ~infinitysounds/lang/russian/setup.tra~
-         ~infinitysounds/lang/russian/dialogue.tra~
 
 // Restore BG1 Spellcasting Voices
 BEGIN @100 DESIGNATED 100 LABEL ~s@-IS-BG1-Spell-Voices~
@@ -777,11 +761,11 @@ BEGIN @210 DESIGNATED 210 LABEL ~s@-IS-BG1-Ambient-Sounds~
 REQUIRE_PREDICATE (GAME_IS ~tob bgee bg2ee eet~) @1
 REQUIRE_PREDICATE (GAME_INCLUDES ~totsc~) @5
 
+PRINT @3 SILENT
+
 ACTION_IF (GAME_IS ~bgt~)  BEGIN INCLUDE ~infinitysounds/lib/g3_bgt_cpmvars.tpa~ END
 ACTION_IF (GAME_IS ~bgee~) BEGIN INCLUDE ~infinitysounds/lib/liam_bgee_vars.tpa~ END
 ACTION_IF (GAME_IS ~eet~)  BEGIN INCLUDE ~infinitysounds/lib/eet_cpmvars.tpa~    END
-
-PRINT @3 SILENT
 
 // horse whinny
 COPY_EXISTING ~%Nashkel%.are~          ~override~
@@ -877,9 +861,9 @@ REQUIRE_PREDICATE (GAME_IS ~tob bgee bg2ee eet~) @1
 REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) || ((GAME_IS ~tob~) && (MOD_IS_INSTALLED ~tobex.tp2~ ~100~)) @7
 REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) || ((GAME_IS ~tob~) && (MOD_IS_INSTALLED ~tobex_afterlife.tp2~ ~200~)) @10
 
-INCLUDE ~infinitysounds/lib/ini_sndset.tph~
-
 PRINT @11 SILENT
+
+INCLUDE ~infinitysounds/lib/ini_sndset.tph~
 
 // enable TobEx AfterLife fixes
 ACTION_IF (GAME_IS ~tob~) BEGIN
@@ -11016,9 +11000,9 @@ BEGIN @250 DESIGNATED 250 LABEL ~s@-IS-Tweak-Existence-Sound-Delay~
 REQUIRE_PREDICATE (GAME_IS ~tob bgee bg2ee eet~) @1
 REQUIRE_COMPONENT ~setup-infinitysounds.tp2~ ~230~ @9
 
-INCLUDE ~infinitysounds/lib/250_cre_idle.tph~
-
 PRINT @11 SILENT
+
+INCLUDE ~infinitysounds/lib/250_cre_idle.tph~
 
 // existence delay
 //  75 = avg.  5 s
@@ -11147,6 +11131,10 @@ BEGIN @265 DESIGNATED 265 LABEL ~s@-IS-Restore-NPC-Voiceovers~
 REQUIRE_PREDICATE (GAME_IS ~tob bg2ee eet~) @1
 
 PRINT @4 SILENT
+
+INCLUDE ~infinitysounds/lib/handle_charsets.tpa~
+
+LOAD_TRA ~%TRA_LOC%/%LANGUAGE%/dialogue.tra~
 
 ACTION_IF (!MOD_IS_INSTALLED ~bg2gtueestyle.tp2~ ~0~) &&
           (~%LANGUAGE%~ STR_EQ ~english~) BEGIN
