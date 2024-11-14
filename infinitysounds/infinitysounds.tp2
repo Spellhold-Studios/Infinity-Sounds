@@ -1,14 +1,14 @@
 BACKUP  ~weidu_external/infinitysounds/backup~
 SUPPORT ~https://github.com/Spellhold-Studios/Infinity-Sounds~
+
 VERSION ~v2.0.1~
-README  ~infinitysounds/lang/%LANGUAGE%/readme-infinitysounds.html~ ~infinitysounds/readme-infinitysounds.html~
 AUTO_EVAL_STRINGS
 ASK_EVERY_COMPONENT
 
-ALWAYS
-  OUTER_TEXT_SPRINT MOD_FOLDER  ~infinitysounds~
-  OUTER_TEXT_SPRINT WORK_FOLDER ~weidu_external/infinitysounds~
-END
+README ~infinitysounds/lang/%LANGUAGE%/readme-infinitysounds.html~
+       ~infinitysounds/readme-infinitysounds.html~
+
+ALWAYS INCLUDE ~infinitysounds/lib/always.tpa~ END
 
 LANGUAGE ~English~
          ~english~
@@ -863,7 +863,7 @@ REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) || ((GAME_IS ~tob~) && (MOD_IS_INST
 
 PRINT @11 SILENT
 
-INCLUDE ~infinitysounds/lib/ini_sndset.tph~
+INCLUDE ~infinitysounds/lib/ini_sndset.tpa~
 
 // enable TobEx AfterLife fixes
 ACTION_IF (GAME_IS ~tob~) BEGIN
@@ -11002,7 +11002,7 @@ REQUIRE_COMPONENT ~setup-infinitysounds.tp2~ ~230~ @9
 
 PRINT @11 SILENT
 
-INCLUDE ~infinitysounds/lib/250_cre_idle.tph~
+INCLUDE ~infinitysounds/lib/250_cre_idle.tpa~
 
 // existence delay
 //  75 = avg.  5 s
@@ -11131,10 +11131,6 @@ BEGIN @265 DESIGNATED 265 LABEL ~s@-IS-Restore-NPC-Voiceovers~
 REQUIRE_PREDICATE (GAME_IS ~tob bg2ee eet~) @1
 
 PRINT @4 SILENT
-
-INCLUDE ~infinitysounds/lib/handle_charsets.tpa~
-
-LOAD_TRA ~%TRA_LOC%/%LANGUAGE%/dialogue.tra~
 
 ACTION_IF (!MOD_IS_INSTALLED ~bg2gtueestyle.tp2~ ~0~) &&
           (~%LANGUAGE%~ STR_EQ ~english~) BEGIN
