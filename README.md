@@ -1,5 +1,5 @@
 [![Release](https://img.shields.io/github/v/release/Spellhold-Studios/Infinity-Sounds?include_prereleases&color=%2392403a)](https://github.com/Spellhold-Studios/Infinity-Sounds/releases/latest)
-[![Published](https://img.shields.io/github/release-date/Spellhold-Studios/Infinity-Sounds?display_date=published_at&label=published&color=%2392403a)](https://github.com/Spellhold-Studios/Infinity-Sounds/releases/latest)
+[![Published](https://img.shields.io/github/release-date-pre/Spellhold-Studios/Infinity-Sounds?display_date=published_at&label=published&color=%2392403a)](https://github.com/Spellhold-Studios/Infinity-Sounds/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/Spellhold-Studios/Infinity-Sounds/total?color=%2392403a)](https://github.com/Spellhold-Studios/Infinity-Sounds/releases)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%a0%20macOS%20%a0%20Linux%20%a0%20Project%20Infinity-%2392403a)](https://github.com/Spellhold-Studios/Infinity-Sounds/releases)
 [![Games](https://img.shields.io/badge/games-BG2%20%a0%20BGT%20%a0%20BG%3AEE%20%a0%20SoD%20%a0%20BG2%3AEE%20%a0%20EET-%2392403a)](https://github.com/Spellhold-Studios/Infinity-Sounds/releases)
