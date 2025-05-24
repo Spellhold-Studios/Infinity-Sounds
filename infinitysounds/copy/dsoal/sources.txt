@@ -1,0 +1,3 @@
+https://github.com/kcat/openal-soft
+https://github.com/kcat/dsoal
+http://vaporeon.io/hosted/dsoal-builds/
