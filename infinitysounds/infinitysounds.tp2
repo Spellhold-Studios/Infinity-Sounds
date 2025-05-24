@@ -426,14 +426,11 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY ary_sfx_postcast_res BEGIN
   bhaal3a, eff_m03 =>  eff_p01  // Permanent Negative Plane Protection (Bhaalspawn)
   spcl908, eff_m07 =>  eff_p06  // War Cry (warrior)
   spin103, eff_p15 => "s@f_p15" // Draw Upon Holy Might (innate)
-  spin112, eff_m10 => "s@f_m10" // Dispel Magic (innate)
   spin544, eff_m33 =>  eff_m01  // Improved Invisibility (psionic)
   spin658, eff_m02 =>  eff_m06  // Wing Buffet (dragon)
   spin784, eff_m04 =>  eff_m07  // Snake Gaze (boalisk)
   sppr214, eff_p15 => "s@f_p15" // Draw Upon Holy Might (priest)
-  sppr303, eff_m10 => "s@f_m10" // Dispel Magic (priest)
   sppr406, eff_m16 =>  eff_p04  // Defensive Harmony (priest)
-  spwi302, eff_m10 => "s@f_m10" // Dispel Magic (wizard)
   spwi605, eff_p88 =>  eff_m07  // Death Spell (wizard)
 END
 
@@ -559,7 +556,27 @@ COPY_EXISTING ~spdr201.spl~ ~override~ // Web (druid)
               ~spwi215.spl~ ~override~ // Web (wizard)
               ~wand14.itm~  ~override~ // Web Sack
   LPF DELETE_EFFECT STR_VAR match_resource = ~eff_m22a~ END
-  LPF CLONE_EFFECT INT_VAR silent = 1 match_opcode = 157 opcode = 174 timing = 4 STR_VAR resource = ~eff_m22a~ END
+  LPF CLONE_EFFECT
+    INT_VAR silent = 1 match_opcode = 157 opcode = 174 timing = 4
+    STR_VAR insert = ~last~ resource = ~eff_m22a~
+  END
+BUT_ONLY IF_EXISTS
+
+// restore BG1 dispel sound
+COPY_EXISTING ~spcl231.spl~  ~override~ // Dispel Magic (paladin)
+              ~sppr303.spl~  ~override~ // Dispel Magic (priest)
+              ~spwi302.spl~  ~override~ // Remove Magic (wizard)
+              ~spwi326.spl~  ~override~ // Dispel Magic (wizard)
+              ~sw2h10dm.spl~ ~override~ // Dispel Magic (Carsomyr)
+  LPF DELETE_EFFECT STR_VAR match_resource = ~eff_m10~ END
+  LPF ADD_SPELL_EFFECT INT_VAR opcode = 174 target = 2 timing = 1 STR_VAR resource = ~s@f_m10~ END
+BUT_ONLY IF_EXISTS
+
+COPY_EXISTING ~spin112.spl~  ~override~ // Dispel Magic (innate)
+  LPF ALTER_EFFECT
+    INT_VAR silent = 1 power = 0 timing = 1 resist_dispel = 0
+    STR_VAR match_resource = ~eff_m10~ resource = ~s@f_m10~
+  END
 BUT_ONLY IF_EXISTS
 
 // patch spell projectile fire sounds
