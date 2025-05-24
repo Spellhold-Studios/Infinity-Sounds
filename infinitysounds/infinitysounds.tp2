@@ -8,7 +8,34 @@ ASK_EVERY_COMPONENT
 README ~infinitysounds/lang/%LANGUAGE%/readme-infinitysounds.html~
        ~infinitysounds/readme-infinitysounds.html~
 
-ALWAYS INCLUDE ~infinitysounds/lib/always.tpa~ END
+ALWAYS
+  ACTION_IF (!VARIABLE_IS_SET tp2_always_done) BEGIN SILENT
+    // convert TRA character encoding for the original game edition
+    ACTION_DEFINE_ARRAY ary_charset_noconv BEGIN setup END
+
+    LAF HANDLE_CHARSETS
+      INT_VAR
+        infer_charsets    = 1
+        from_utf8         = 1
+      STR_VAR
+        default_language  = ~english~
+        tra_path          = EVAL ~%MOD_FOLDER%/lang~
+        out_path          = EVAL ~weidu_external/%MOD_FOLDER%/lang~
+        noconvert_array   = ~ary_charset_noconv~
+    END
+
+    ACTION_IF (GAME_IS ~bgee bg2ee eet~) BEGIN
+      OUTER_TEXT_SPRINT tra_location EVAL ~%MOD_FOLDER%/lang~
+    END ELSE BEGIN
+      OUTER_TEXT_SPRINT tra_location EVAL ~weidu_external/%MOD_FOLDER%/lang~
+    END
+
+    LOAD_TRA ~%tra_location%/english/dialogue.tra~
+             ~%tra_location%/%LANGUAGE%/dialogue.tra~
+
+    OUTER_SET tp2_always_done = 1
+  END VERBOSE
+END
 
 LANGUAGE ~English~
          ~english~
