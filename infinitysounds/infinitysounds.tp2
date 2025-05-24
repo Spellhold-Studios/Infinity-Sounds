@@ -399,11 +399,14 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY ary_sfx_postcast_res BEGIN
   bhaal3a, eff_m03 =>  eff_p01  // Permanent Negative Plane Protection (Bhaalspawn)
   spcl908, eff_m07 =>  eff_p06  // War Cry (warrior)
   spin103, eff_p15 => "s@f_p15" // Draw Upon Holy Might (innate)
+  spin112, eff_m10 => "s@f_m10" // Dispel Magic (innate)
   spin544, eff_m33 =>  eff_m01  // Improved Invisibility (psionic)
   spin658, eff_m02 =>  eff_m06  // Wing Buffet (dragon)
   spin784, eff_m04 =>  eff_m07  // Snake Gaze (boalisk)
   sppr214, eff_p15 => "s@f_p15" // Draw Upon Holy Might (priest)
+  sppr303, eff_m10 => "s@f_m10" // Dispel Magic (priest)
   sppr406, eff_m16 =>  eff_p04  // Defensive Harmony (priest)
+  spwi302, eff_m10 => "s@f_m10" // Dispel Magic (wizard)
   spwi605, eff_p88 =>  eff_m07  // Death Spell (wizard)
 END
 
@@ -577,6 +580,7 @@ END
 // item filename, old item sound => new item sound
 ACTION_DEFINE_ASSOCIATIVE_ARRAY ary_sfx_itm_res BEGIN
   amul01, cas_m02  =>  eff_m06  // Necklace of Missiles
+  arow07, eff_m10  => "s@f_m10" // Arrows of Dispelling
   bolt05, eff_p07  =>  eff_m08  // Bolt of Polymorphing
   potn10, cas_m01  =>  eff_m01  // Potion of Invisibility
   potn13, cas_m06  =>  eff_m06  // Oil of Fiery Burning
