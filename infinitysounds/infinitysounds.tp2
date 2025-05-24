@@ -11137,6 +11137,8 @@ REQUIRE_PREDICATE (GAME_IS ~tob bg2ee eet~) @1
 PRINT @4 SILENT
 
 ACTION_IF (!MOD_IS_INSTALLED ~bg2gtueestyle.tp2~ ~0~) &&
+          (!MOD_IS_INSTALLED ~bg2fixpack.tp2~ (ID_OF_LABEL ~bg2fixpack.tp2~ ~cd_bg2fp_gtu_ee_without_sound~)) &&
+          (!MOD_IS_INSTALLED ~bg2fixpack.tp2~ (ID_OF_LABEL ~bg2fixpack.tp2~ ~cd_bg2fp_gtu_ee_with_sound~)) &&
           (~%LANGUAGE%~ STR_EQ ~english~) BEGIN
   COPY ~infinitysounds/copy/wav/265_vo~ ~override~
 
@@ -11410,7 +11412,8 @@ REQUIRE_PREDICATE (~%LANGUAGE%~ STR_EQ ~english~) @6
 
 PRINT @4 SILENT
 
-ACTION_IF (!MOD_IS_INSTALLED ~bg2gtueestyle.tp2~ ~10~) BEGIN
+ACTION_IF (!MOD_IS_INSTALLED ~bg2gtueestyle.tp2~ ~10~) &&
+          (!MOD_IS_INSTALLED ~bg2fixpack.tp2~ (ID_OF_LABEL ~bg2fixpack.tp2~ ~cd_bg2fp_gtu_ee_with_sound~)) BEGIN
   COPY ~infinitysounds/copy/wav/270_vo~ ~override~
 
   ACTION_DEFINE_ASSOCIATIVE_ARRAY ary_new_vo_str_set BEGIN
