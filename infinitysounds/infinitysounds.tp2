@@ -758,11 +758,11 @@ COPY_EXISTING ~sndchann.2da~ ~override~
   SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 16 1  92 // monsters
   SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 17 1  62 // hits
   SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 18 1  70 // missile
-  SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 19 1  97 // ambients (loop)
-  SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 20 1  97 // ambients (non-loop)
-  SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 21 1  35 // pc footsteps
-  SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 22 1  35 // npc footsteps
-  SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 23 1  46 // armor
+  SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 19 1  92 // ambients (loop)
+  SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 20 1  92 // ambients (non-loop)
+  SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 21 1  25 // pc footsteps
+  SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 22 1  25 // npc footsteps
+  SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 23 1  36 // armor
   SET_2DA_ENTRIES_NOW ~_#_#_#sndchann~  1
   PRETTY_PRINT_2DA
 BUT_ONLY
