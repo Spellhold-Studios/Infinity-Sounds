@@ -773,16 +773,17 @@ REQUIRE_PREDICATE (GAME_IS ~tob bgee bg2ee eet~) @1
 
 PRINT @3 SILENT
 
-COPY + ~baldur.ini~ ~baldur.ini~
-  REPLACE_TEXTUALLY ~\[Game Options\]~ ~[Game Options]
-Disable Foot Steps During Combat=0~
-  UNLESS ~Disable Foot Steps During Combat=0~
-BUT_ONLY IF_EXISTS
-
-APPEND_OUTER + ~%USER_DIRECTORY%/Baldur.lua~
-  ~SetPrivateProfileString('Game Options','Disable Foot Steps During Combat','0')~
-  UNLESS ~SetPrivateProfileString('Game Options','Disable Foot Steps During Combat','0')~
-BUT_ONLY IF_EXISTS
+ACTION_IF (GAME_IS ~bgee bg2ee eet~) BEGIN
+  APPEND_OUTER + ~%USER_DIRECTORY%/Baldur.lua~
+    ~SetPrivateProfileString('Game Options','Disable Foot Steps During Combat','0')~
+    UNLESS ~SetPrivateProfileString('Game Options','Disable Foot Steps During Combat','0')~
+  BUT_ONLY IF_EXISTS
+END ELSE BEGIN
+  COPY + ~baldur.ini~ ~baldur.ini~
+    REPLACE_TEXTUALLY ~\(\[Game Options\]\)\(%WNL%\|[%LNL%%MNL%]\)~ ~\1\2Disable Foot Steps During Combat=0\2~
+    UNLESS ~Disable Foot Steps During Combat=0~
+  BUT_ONLY IF_EXISTS
+END
 
 // Mute Reputation Change Sounds
 BEGIN @190 DESIGNATED 190 LABEL ~s@-IS-Mute-Rep-Sounds~
