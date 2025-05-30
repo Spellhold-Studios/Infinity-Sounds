@@ -1049,6 +1049,14 @@ ACTION_IF (GAME_IS ~bgee~) && (!GAME_INCLUDES ~sod~) BEGIN
   COPY ~infinitysounds/copy/wav/230_mon5~ ~override~ // missing BG2 monster sounds
 END
 
+// amplify monster walking sounds
+COPY ~infinitysounds/copy/wav/230_wal/wal_18.wav~  ~override~ // ghoul
+     ~infinitysounds/copy/wav/230_wal/wal_18a.wav~ ~override~
+     ~infinitysounds/copy/wav/230_wal/wal_18b.wav~ ~override~
+     ~infinitysounds/copy/wav/230_wal/wal_18c.wav~ ~override~
+     ~infinitysounds/copy/wav/230_wal/wal_18d.wav~ ~override~
+     ~infinitysounds/copy/wav/230_wal/wal_31.wav~  ~override~ // wolf/dog
+
 // adjust attack animations: 34-33-33
 COPY_EXISTING ~demogorg.itm~ ~override~ // demigorgon
               ~deva.itm~     ~override~ // antisolar
