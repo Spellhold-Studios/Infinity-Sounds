@@ -11,7 +11,7 @@
   @9 = ~Requires component [Restore & Tweak Soundsets]~
  @10 = ~Requires mod [TobEx AfterLife]~
  @11 = ~Copying and patching files. This might take a while ...~
- @12 = ~Not needed with BG2 EE-Style GTU.~
+ @12 = ~Unsupported operating system.~
 @100 = ~Restore BG1 Spellcasting Voices~
 @110 = ~Restore BG1 Spellcasting Sounds~
 @120 = ~Restore BG1 Weapon Sounds~
@@ -25,10 +25,10 @@
 @190 = ~Mute Reputation Change Sounds~
 @200 = ~Mute Tooltip Paper Sound~
 @210 = ~Restore BG1 Ambient Sounds~
-@220 = ~Restore Environmental Audio (WARNING: check the readme!)~
+@220 = ~Restore Environmental & Positional Audio~
+@221 = ~Enhance Positional Audio~
 @230 = ~Restore & Tweak Soundsets~
 @240 = ~More Existence Sounds~
 @250 = ~Tweak Existence Sound Delay~
-@260 = ~More Soundset Pitch Variation~
 @265 = ~Restore NPC Voiceovers~
 @270 = ~Additional NPC Voiceovers (by Salk)~
