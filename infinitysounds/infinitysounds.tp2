@@ -676,8 +676,7 @@ COPY ~infinitysounds/copy/wav/120_swi2~ ~override~
 
 // Restore BG1 Armor Sounds
 BEGIN @130 DESIGNATED 130 LABEL ~s@-IS-BG1-Armor-Sounds~
-REQUIRE_PREDICATE (!GAME_IS ~bgee~) || (GAME_INCLUDES ~sod~) @5
-REQUIRE_PREDICATE (GAME_IS ~tob bg2ee eet~) || (GAME_INCLUDES ~sod~) @1
+REQUIRE_PREDICATE (GAME_IS ~tob bgee bg2ee eet~) @1
 
 PRINT @2 SILENT
 
@@ -686,7 +685,11 @@ ACTION_IF (!GAME_INCLUDES ~sod~) || (GAME_IS ~eet~) BEGIN
        ~infinitysounds/copy/wav/130_wal~ ~override~
 END
 
-COPY ~infinitysounds/copy/wav/130_hit~ ~override~
+ACTION_IF (!GAME_IS ~bgee~) || (GAME_INCLUDES ~sod~) BEGIN
+  COPY ~infinitysounds/copy/wav/130_hit~ ~override~
+END
+
+COPY ~infinitysounds/copy/wav/130_arm2~ ~override~
 
 // Restore BG1 GUI Sounds
 BEGIN @140 DESIGNATED 140 LABEL ~s@-IS-BG1-GUI-Sounds~
