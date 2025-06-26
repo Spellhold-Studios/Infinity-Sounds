@@ -11111,37 +11111,37 @@ OUTER_SET def_idle_delay = 300
 
 // animation # => existence sound delay
 ACTION_DEFINE_ASSOCIATIVE_ARRAY ary_idle_delay_anim BEGIN
-   8192    => 600 // sirine
-  29184    => 600 // bear_black
-  29185    => 600 // bear_brown
-  29186    => 600 // bear_cave
-  29187    => 600 // bear_polar
-  29696    => 600 // dog_wild
-  29697    => 600 // dog_war
-  29952    => 600 // doppleganger
-  29953    => 600 // doppleganger_greater
-  30208    => 600 // ettercap
-  30464    => 600 // ghoul
-  30466    => 600 // ghast
-  31488    => 600 // wolf
-  31489    => 600 // wolf_worg
-  31490    => 600 // wolf_dire
-  31491    => 600 // wolf_winter
-  31492    => 600 // wolf_vampire
-  31493    => 600 // wolf_dread
-  31745    => 600 // kobold_tasloi
-  32000    => 600 // zombie
-  32557    => 600 // wyvern_familiar
-  32768    => 600 // gnoll
-  33024    => 600 // hobgoblin
+   8192    => 800 // sirine
+  29184    => 800 // bear_black
+  29185    => 800 // bear_brown
+  29186    => 800 // bear_cave
+  29187    => 800 // bear_polar
+  29696    => 800 // dog_wild
+  29697    => 800 // dog_war
+  29952    => 800 // doppleganger
+  29953    => 800 // doppleganger_greater
+  30208    => 800 // ettercap
+  30464    => 800 // ghoul
+  30466    => 800 // ghast
+  31488    => 800 // wolf
+  31489    => 800 // wolf_worg
+  31490    => 800 // wolf_dire
+  31491    => 800 // wolf_winter
+  31492    => 800 // wolf_vampire
+  31493    => 800 // wolf_dread
+  31745    => 800 // kobold_tasloi
+  32000    => 800 // zombie
+  32557    => 900 // wyvern_familiar
+  32768    => 800 // gnoll
+  33024    => 800 // hobgoblin
 END
 
 // creature filename => existence sound delay
 ACTION_DEFINE_ASSOCIATIVE_ARRAY ary_idle_delay_cre BEGIN
-  famcat   => 600 // Cat (familiar)
-  famcat25 => 600
-  famcat_  => 600
-  rufie    => 300
+  famcat   => 900 // Cat (familiar)
+  famcat25 => 900
+  famcat_  => 900
+  rufie    => 300 // Rufie
   sirine02 => 300 // Sirine (temple)
 END
 
