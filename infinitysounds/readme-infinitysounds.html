@@ -253,7 +253,7 @@
             <a href="#restore-bg1-ambient-sounds">Restore BG1 Ambient Sounds</a>
             <a href="#restore-environmental-audio">Restore Environmental &amp; Positional Audio</a>
             <a href="#enhance-positional-audio">Enhance Positional Audio</a>
-            <a href="#restore-tweak-soundsets">Restore & Tweak Soundsets</a>
+            <a href="#restore-tweak-soundsets">Restore &amp; Tweak Soundsets</a>
             <a href="#more-existence-sounds">More Existence Sounds</a>
             <a href="#tweak-existence-sound-delay">Tweak Existence Sound Delay</a>
             <a href="#restore-npc-voiceovers">Restore NPC Voiceovers</a>
@@ -305,19 +305,18 @@
         <p>Below is a list of recommended mods that offer audio-related fixes, tweaks, or content restorations. Generally, <strong>install any of these mods before Infinity Sounds</strong>. Consult the respective readme files for the exact installation order.</p>
         <ul>
           <li><a href="https://github.com/Gibberlings3/BG2-Fixpack">BG2 Fixpack</a> corrects or restores a number of sounds and voiceovers.</li>
+          <li><a href="https://github.com/Spellhold-Studios/Almaterias-Restoration-Project">Almateria's Restoration Project</a> restores missing sounds to many NPCs.</li>
           <li><a href="https://github.com/Spellhold-Studios/Nostalgia-Pack">Nostalgia Pack</a> puts the BG back into BG:EE.</li>
           <li><a href="https://github.com/Spellhold-Studios/AC-Miscellaneous-Tweaks">AC's Miscellaneous Tweaks</a> ports BG:EE, BG2:EE, and SoD soundsets to other BG games.</li>
           <li><a href="https://github.com/GraionDilach/Baldurs-Gate-Voice-Pack-for-EE-2.6">Baldur's Gate Voice Pack for EE</a> adds BG1 soundsets to EE games.</li>
         </ul>
-        <p class="note"><a href="https://github.com/Spellhold-Studios/Almaterias-Restoration-Project">Almateria's Restoration Project</a> should appear on this list once its compatibility with Infinity Sounds has been fully tested.</p>
       </section>
       <section>
         <a class="jumplink" id="installation"></a>
         <h2>Installation</h2>
-        <p>Infinity Sounds is a WeiDU mod packaged in a ZIP archive. Extract the contents of the archive into your game directory.</p>
+        <p>Infinity Sounds is a WeiDU mod packaged in a ZIP archive. First, extract the contents of the archive into your game directory.</p>
         <p>Then, run <b>setup-infinitysounds.exe</b> (Windows), <b>setup-infinitysounds.command</b> (macOS), or <b>setup-infinitysounds.sh</b> (Linux), and follow the on-screen instructions.</p>
         <p>To uninstall or change components, run the setup file again and follow the prompts.</p>
-        <p><a href="https://github.com/ALIENQuake/ProjectInfinity">Project Infinity</a> is recommended for managing mod installations.</p>
       </section>
       <section>
         <a class="jumplink" id="components"></a>
@@ -508,11 +507,28 @@
       <section class="vhist">
         <a class="jumplink" id="version-history"></a>
         <h2>Version history</h2>
+        <h3 class="smaller">2.1<span class="vhistsubheading">(29 Jun 2025)</span></h3>
+          <ul>
+            <li>New component: Enhance Positional Audio</li>
+            <li>Restore NPC Voiceovers: German voiceover transcription (thanks to Ychap)</li>
+            <li>Restore NPC Voiceovers: Russian subtitles translation (thanks to yota13)</li>
+            <li>Restore NPC Voiceovers: Polish voiceover transcription</li>
+            <li>Restore NPC Voiceovers: restored Aerie's minor unused voiceover (thanks to Ychap)</li>
+            <li>Restore BG1 Spellcasting Sounds: restricted the BG1 variant of eff_m10.wav to Dispel Magic and Remove Magic</li>
+            <li>Tweak Sound Channel Volume Levels: disabled the hardcoded volume variation of armor movement sounds</li>
+            <li>Tweak Sound Channel Volume Levels: attenuated footsteps and armor movement sounds</li>
+            <li>Restore &amp; Tweak Soundsets: amplified the walking sounds of ghouls, wolves, and dogs</li>
+            <li>More Existence Sounds: increased the existence sound delay of several creature types</li>
+            <li>Support for translations with UTF-8 character encoding</li>
+            <li>Compatibility with BG2 Fixpack EE-style GTU</li>
+            <li>Updated DSOAL to r659 and OpenAL Soft to r9933</li>
+            <li>Repackaged with Windows, macOS, and Linux installers in a single ZIP archive (thanks to Argent77)</li>
+          </ul>
         <h3 class="smaller">2.0.1<span class="vhistsubheading">(22 Oct 2023)</span></h3>
           <ul>
-            <li>Restored gulp sound when using potions in BG:EE</li>
-            <li>Added rare selection soundset slots compatible with EET</li>
-            <li>Prevented the installation of legacy BG1 PC Soundsets on EE games</li>
+            <li>Restore Gulp Sound: restored the gulp sound when using potions in BG:EE</li>
+            <li>Restore &amp; Tweak Soundsets: added rare selection soundset slots compatible with EET</li>
+            <li>Restore BG1 PC Soundsets: prevented the installation of the legacy soundsets on EE games</li>
             <li>Moved restored NPC sounds with added subtitles from Restore &amp; Tweak Soundsets to Restore NPC Voiceovers</li>
           </ul>
         <h3 class="smaller">2.0<span class="vhistsubheading">(17 Aug 2023)</span></h3>
