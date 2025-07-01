@@ -41,6 +41,11 @@ LANGUAGE ~English~
          ~english~
          ~infinitysounds/lang/english/setup.tra~
 
+LANGUAGE ~French~
+         ~french~
+         ~infinitysounds/lang/english/setup.tra~
+         ~infinitysounds/lang/french/setup.tra~
+
 LANGUAGE ~German~
          ~german~
          ~infinitysounds/lang/english/setup.tra~
@@ -55,11 +60,6 @@ LANGUAGE ~Russian~
          ~russian~
          ~infinitysounds/lang/english/setup.tra~
          ~infinitysounds/lang/russian/setup.tra~
-
-LANGUAGE ~Francais~
-         ~french~
-         ~infinitysounds/lang/english/setup.tra~
-         ~infinitysounds/lang/french/setup.tra~
 
 // Restore BG1 Spellcasting Voices
 BEGIN @100 DESIGNATED 100 LABEL ~s@-IS-BG1-Spell-Voices~
