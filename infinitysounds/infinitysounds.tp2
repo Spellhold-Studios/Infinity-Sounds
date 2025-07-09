@@ -10571,6 +10571,22 @@ COPY_EXISTING ~bhghoul1.cre~ ~override~ // Ghoul
   WRITE_LONG EXISTANCE2 5646 // ghoul03
 BUT_ONLY IF_EXISTS
 
+// gibberling
+COPY_EXISTING ~bgigibb.cre~  ~override~ // Gibberling
+              ~gibber.cre~   ~override~
+              ~gibber01.cre~ ~override~
+              ~gibber02.cre~ ~override~
+              ~gibbersu.cre~ ~override~
+              ~igibber.cre~  ~override~
+              ~ttgibb.cre~   ~override~
+              ~gibber2.cre~  ~override~ // Diseased Gibberling
+              ~uhcreat2.cre~ ~override~
+              ~uhgibb01.cre~ ~override~
+              ~gibmut01.cre~ ~override~ // Mutated Gibberling
+  WRITE_LONG EXISTANCE1 5501 // giber01
+  WRITE_LONG EXISTANCE2 5502 // giber02
+BUT_ONLY IF_EXISTS
+
 // gnoll
 COPY_EXISTING ~aegnoll.cre~  ~override~ // Gnoll
               ~dagnoll.cre~  ~override~
