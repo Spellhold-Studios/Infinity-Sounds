@@ -11126,35 +11126,37 @@ INCLUDE ~infinitysounds/lib/250_cre_idle.tpa~
 // 750 = avg. 50 s
 // 825 = avg. 55 s
 // 900 = avg. 60 s
+// 975 = avg. 65 s
 
 // set default existence sound delay
 OUTER_SET def_idle_delay = 300
 
 // animation # => existence sound delay
 ACTION_DEFINE_ASSOCIATIVE_ARRAY ary_idle_delay_anim BEGIN
-   8192    => 800 // sirine
-  29184    => 800 // bear_black
-  29185    => 800 // bear_brown
-  29186    => 800 // bear_cave
-  29187    => 800 // bear_polar
-  29696    => 800 // dog_wild
-  29697    => 800 // dog_war
-  29952    => 800 // doppleganger
-  29953    => 800 // doppleganger_greater
-  30208    => 800 // ettercap
-  30464    => 800 // ghoul
-  30466    => 800 // ghast
-  31488    => 800 // wolf
-  31489    => 800 // wolf_worg
-  31490    => 800 // wolf_dire
-  31491    => 800 // wolf_winter
-  31492    => 800 // wolf_vampire
-  31493    => 800 // wolf_dread
-  31745    => 800 // kobold_tasloi
-  32000    => 800 // zombie
+   8192    => 750 // sirine
+  29184    => 750 // bear_black
+  29185    => 750 // bear_brown
+  29186    => 750 // bear_cave
+  29187    => 750 // bear_polar
+  29696    => 750 // dog_wild
+  29697    => 750 // dog_war
+  29952    => 750 // doppleganger
+  29953    => 750 // doppleganger_greater
+  30208    => 750 // ettercap
+  30464    => 750 // ghoul
+  30466    => 750 // ghast
+  30720    => 900 // gibberling
+  31488    => 750 // wolf
+  31489    => 750 // wolf_worg
+  31490    => 750 // wolf_dire
+  31491    => 750 // wolf_winter
+  31492    => 750 // wolf_vampire
+  31493    => 750 // wolf_dread
+  31745    => 750 // kobold_tasloi
+  32000    => 750 // zombie
   32557    => 900 // wyvern_familiar
-  32768    => 800 // gnoll
-  33024    => 800 // hobgoblin
+  32768    => 750 // gnoll
+  33024    => 750 // hobgoblin
 END
 
 // creature filename => existence sound delay
