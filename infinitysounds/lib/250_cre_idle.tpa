@@ -102,6 +102,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY ary_cre_idle BEGIN
   bgbasill   => 1
   bgftown2   => 1
   bgghast    => 1
+  bgigibb    => 1
   bgknigh1   => 1
   bgmtown2   => 1
   bgstalke   => 1
@@ -306,6 +307,12 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY ary_cre_idle BEGIN
   ghoul01    => 1
   ghoullor   => 1
   ghoulsu    => 1
+  gibber     => 1
+  gibber01   => 1
+  gibber02   => 1
+  gibber2    => 1
+  gibbersu   => 1
+  gibmut01   => 1
   girba1     => 1
   girba3_a   => 1
   girba3_d   => 1
@@ -405,6 +412,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY ary_cre_idle BEGIN
   ichary     => 1
   icsalcol   => 1
   icsalfir   => 1
+  igibber    => 1
   ignati     => 1
   ihobgob    => 1
   ike        => 1
@@ -704,6 +712,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY ary_cre_idle BEGIN
   trevil05   => 1
   trollgi    => 1
   trwen01    => 1
+  ttgibb     => 1
   ttspid     => 1
   ubmalka2   => 1
   ubmalkal   => 1
@@ -719,6 +728,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY ary_cre_idle BEGIN
   udspid07   => 1
   udspid08   => 1
   ughh       => 1
+  uhcreat2   => 1
+  uhgibb01   => 1
   uhogre04   => 1
   ulcast     => 1
   ursa       => 1
