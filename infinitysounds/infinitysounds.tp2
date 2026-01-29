@@ -10584,6 +10584,9 @@ COPY_EXISTING ~bgigibb.cre~  ~override~ // Gibberling
               ~gibmut01.cre~ ~override~ // Mutated Gibberling
   WRITE_LONG EXISTANCE1 5501 // giber01
   WRITE_LONG EXISTANCE2 5502 // giber02
+  SAY EXISTANCE3 ~~ [s@gibb10]
+  SAY EXISTANCE4 ~~ [s@gibb11]
+  SAY EXISTANCE5 ~~ [s@gibb12]
 BUT_ONLY IF_EXISTS
 
 // gnoll
@@ -11144,7 +11147,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY ary_idle_delay_anim BEGIN
   30208    => 750 // ettercap
   30464    => 750 // ghoul
   30466    => 750 // ghast
-  30720    => 900 // gibberling
+  30720    => 750 // gibberling
   31488    => 750 // wolf
   31489    => 750 // wolf_worg
   31490    => 750 // wolf_dire
