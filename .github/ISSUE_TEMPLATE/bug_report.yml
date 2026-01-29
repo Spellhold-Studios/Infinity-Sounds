@@ -1,5 +1,5 @@
 name: Bug report
-description: A convenient form to help you create a report.
+description: A convenient form to help you create a report
 labels: bug
 body:
   - type: textarea
@@ -27,4 +27,4 @@ body:
   - type: textarea
     attributes:
       label: Attachments
-      description: Please attach your WeiDU log, screenshots or anything else that might help.
+      description: Please attach your WeiDU log, screenshots, or anything else that might help.
