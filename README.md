@@ -73,6 +73,7 @@ In a nutshell, Infinity Sounds is a mod for Baldur's Gate II that aims to improv
 **Contributors**  
 
 - Salk &nbsp;&ndash;&nbsp; component Additional NPC Voiceovers
+- ElGamerViejuno &nbsp;&ndash;&nbsp; Spanish setup prompts and subtitles translation for Restore NPC Voiceovers
 - Selphira &nbsp;&ndash;&nbsp; French setup prompts and subtitles translation for Restore NPC Voiceovers
 - Ychap &nbsp;&ndash;&nbsp; German voiceover transcription for Restore NPC Voiceovers
 - yota13 &nbsp;&ndash;&nbsp; Russian subtitles translation for Restore NPC Voiceovers

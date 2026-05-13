@@ -1,0 +1,34 @@
+// encoding: US-ASCII
+
+  @1 = ~Juego no compatible~
+  @2 = ~Copiando archivos ...~
+  @3 = ~Parcheando archivos ...~
+  @4 = ~Copiando y parcheando archivos ...~
+  @5 = ~No es necesario con la configuracion actual~
+  @6 = ~Idioma no compatible~
+  @7 = ~Requiere el mod [TobEx] y el componente [Core]~
+  @8 = ~Requiere el mod [TobEx] y el componente [Enable Animation Attack Sounds]~
+  @9 = ~Requiere el componente [Restaurar y ajustar conjuntos de sonidos]~
+ @10 = ~Requiere el mod [TobEx AfterLife]~
+ @11 = ~Copiando y parcheando archivos. Esto puede tardar un rato ...~
+ @12 = ~Sistema operativo no compatible~
+@100 = ~Restaurar voces de lanzamiento de conjuros de BG1~
+@110 = ~Restaurar sonidos de lanzamiento de conjuros de BG1~
+@120 = ~Restaurar sonidos de armas de BG1~
+@130 = ~Restaurar sonidos de armaduras de BG1~
+@140 = ~Restaurar sonidos de interfaz grafica de BG1~
+@150 = ~Restaurar conjuntos de sonidos de PJ de BG1~
+@160 = ~Restaurar sonido de trago~
+@170 = ~Restaurar sonido de muerte en pedazos~
+@180 = ~Ajustar niveles de volumen de canales de sonido~
+@189 = ~Habilitar sonido de pisadas durante el combate~
+@190 = ~Silenciar sonidos de cambio de reputacion~
+@200 = ~Silenciar sonido de papel de descripciones emergentes~
+@210 = ~Restaurar los sonidos ambientales de BG1~
+@220 = ~Restaurar audio ambiental y posicional~
+@221 = ~Mejorar audio posicional~
+@230 = ~Restaurar y ajustar conjuntos de sonidos~
+@240 = ~Mas sonidos de presencia~
+@250 = ~Ajustar retardo de sonidos de presencia~
+@265 = ~Restaurar voces de PNJ~
+@270 = ~Voces adicionales de PNJ (por Salk)~
