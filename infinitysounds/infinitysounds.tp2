@@ -60,6 +60,11 @@ LANGUAGE ~Russian~
          ~infinitysounds/lang/english/setup.tra~
          ~infinitysounds/lang/russian/setup.tra~
 
+LANGUAGE ~Spanish~
+         ~spanish~
+         ~infinitysounds/lang/english/setup.tra~
+         ~infinitysounds/lang/spanish/setup.tra~
+
 // Restore BG1 Spellcasting Voices
 BEGIN @100 DESIGNATED 100 LABEL ~s@-IS-BG1-Spell-Voices~
 REQUIRE_PREDICATE (GAME_IS ~tob bgee bg2ee eet~) @1
