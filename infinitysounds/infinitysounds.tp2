@@ -911,38 +911,84 @@ COPY_EXISTING ~%FishingVillage%.are~ ~override~
 BUT_ONLY IF_EXISTS
 
 // Restore Environmental & Positional Audio
-BEGIN @220 DESIGNATED 220 LABEL ~s@-IS-Restore-EAX~
+
+// Headphones - Crossfeed
+BEGIN @222 SUBCOMPONENT @220 DESIGNATED 222 LABEL ~s@-IS-Restore-EAX-Xfeed~
 REQUIRE_PREDICATE (GAME_IS ~tob~) @1
 
-PRINT @4 SILENT
+ACTION_DEFINE_ASSOCIATIVE_ARRAY ary_alsoft_cfg BEGIN
+  channels        => stereo
+  stereo-mode     => headphones
+  stereo-encoding => basic
+  cf_level        => 3
+END
 
-COPY ~infinitysounds/copy/dsoal/dsoal-aldrv.dll~ ~dsoal-aldrv.dll~
-     ~infinitysounds/copy/dsoal/dsound.dll~      ~dsound.dll~
-     ~infinitysounds/copy/dsoal/alsoft.ini~      ~alsoft.ini~
+INCLUDE ~infinitysounds/setup/220-restore-eax.tpa~
 
-COPY + ~baldur.ini~ ~baldur.ini~
-  REPLACE_TEXTUALLY ~Environmental Audio=0~ ~Environmental Audio=1~
-BUT_ONLY IF_EXISTS
+// Headphones - HRTF
+BEGIN @223 SUBCOMPONENT @220 DESIGNATED 223 LABEL ~s@-IS-Restore-EAX-HRTF~
+REQUIRE_PREDICATE (GAME_IS ~tob~) @1
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY ary_alsoft_cfg BEGIN
+  channels        => stereo
+  stereo-mode     => headphones
+  stereo-encoding => hrtf
+END
+
+INCLUDE ~infinitysounds/setup/220-restore-eax.tpa~
+
+// Speakers
+BEGIN @224 SUBCOMPONENT @220 DESIGNATED 224 LABEL ~s@-IS-Restore-EAX-Speakers~
+REQUIRE_PREDICATE (GAME_IS ~tob~) @1
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY ary_alsoft_cfg BEGIN
+  stereo-mode => speakers
+END
+
+INCLUDE ~infinitysounds/setup/220-restore-eax.tpa~
 
 // Enhance Positional Audio
-BEGIN @221 DESIGNATED 221 LABEL ~s@-IS-Enhance-Pos-Audio~
+
+// Headphones - Crossfeed
+BEGIN @222 SUBCOMPONENT @221 DESIGNATED 225 LABEL ~s@-IS-Enhance-Pos-Audio-Xfeed~
 REQUIRE_PREDICATE (!GAME_IS ~tob~) @5
 REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) @1
 REQUIRE_PREDICATE (~%WEIDU_OS%~ STR_EQ ~win32~) @12
 
-PRINT @4 SILENT
+ACTION_DEFINE_ASSOCIATIVE_ARRAY ary_alsoft_cfg BEGIN
+  channels        => stereo
+  stereo-mode     => headphones
+  stereo-encoding => basic
+  cf_level        => 3
+END
 
-COPY ~infinitysounds/copy/dsoal/ee/openal32.dll~ ~OpenAL32.dll~
-     ~infinitysounds/copy/dsoal/alsoft.ini~      ~alsoft.ini~
+INCLUDE ~infinitysounds/setup/221-enhance-3d-audio.tpa~
 
-COPY + ~%USER_DIRECTORY%/Baldur.lua~ ~%USER_DIRECTORY%/Baldur.lua~
-  REPLACE_TEXTUALLY ~'Environmental Audio','0'~ ~'Environmental Audio','1'~
-BUT_ONLY IF_EXISTS
+// Headphones - HRTF
+BEGIN @223 SUBCOMPONENT @221 DESIGNATED 226 LABEL ~s@-IS-Enhance-Pos-Audio-HRTF~
+REQUIRE_PREDICATE (!GAME_IS ~tob~) @5
+REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) @1
+REQUIRE_PREDICATE (~%WEIDU_OS%~ STR_EQ ~win32~) @12
 
-APPEND_OUTER + ~%USER_DIRECTORY%/Baldur.lua~
-  ~SetPrivateProfileString('Game Options','Environmental Audio','1')~
-  UNLESS ~SetPrivateProfileString('Game Options','Environmental Audio','1')~
-BUT_ONLY IF_EXISTS
+ACTION_DEFINE_ASSOCIATIVE_ARRAY ary_alsoft_cfg BEGIN
+  channels        => stereo
+  stereo-mode     => headphones
+  stereo-encoding => hrtf
+END
+
+INCLUDE ~infinitysounds/setup/221-enhance-3d-audio.tpa~
+
+// Speakers
+BEGIN @224 SUBCOMPONENT @221 DESIGNATED 227 LABEL ~s@-IS-Enhance-Pos-Audio-Speakers~
+REQUIRE_PREDICATE (!GAME_IS ~tob~) @5
+REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) @1
+REQUIRE_PREDICATE (~%WEIDU_OS%~ STR_EQ ~win32~) @12
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY ary_alsoft_cfg BEGIN
+  stereo-mode => speakers
+END
+
+INCLUDE ~infinitysounds/setup/221-enhance-3d-audio.tpa~
 
 // Restore & Tweak Soundsets
 BEGIN @230 DESIGNATED 230 LABEL ~s@-IS-Restore-Tweak-Soundsets~

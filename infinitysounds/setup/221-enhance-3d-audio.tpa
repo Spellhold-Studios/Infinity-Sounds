@@ -1,0 +1,17 @@
+PRINT @4 SILENT
+
+COPY ~infinitysounds/copy/dsoal/ee/openal32.dll~ ~OpenAL32.dll~
+
+COPY ~infinitysounds/copy/dsoal/alsoft.ini~ ~alsoft.ini~
+  PHP_EACH ary_alsoft_cfg AS key => value BEGIN
+    REPLACE_TEXTUALLY ~^#\(%key% ?=\).*$~ ~\1 %value%~
+  END
+
+COPY + ~%USER_DIRECTORY%/Baldur.lua~ ~%USER_DIRECTORY%/Baldur.lua~
+  REPLACE_TEXTUALLY ~'Environmental Audio','0'~ ~'Environmental Audio','1'~
+BUT_ONLY IF_EXISTS
+
+APPEND_OUTER + ~%USER_DIRECTORY%/Baldur.lua~
+  ~SetPrivateProfileString('Game Options','Environmental Audio','1')~
+  UNLESS ~SetPrivateProfileString('Game Options','Environmental Audio','1')~
+BUT_ONLY IF_EXISTS

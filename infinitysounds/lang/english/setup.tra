@@ -27,6 +27,9 @@
 @210 = ~Restore BG1 Ambient Sounds~
 @220 = ~Restore Environmental & Positional Audio~
 @221 = ~Enhance Positional Audio~
+@222 = ~Headphones - Crossfeed~
+@223 = ~Headphones - HRTF~
+@224 = ~Speakers~
 @230 = ~Restore & Tweak Soundsets~
 @240 = ~More Existence Sounds~
 @250 = ~Tweak Existence Sound Delay~

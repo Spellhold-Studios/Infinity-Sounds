@@ -1,0 +1,13 @@
+PRINT @4 SILENT
+
+COPY ~infinitysounds/copy/dsoal/dsoal-aldrv.dll~ ~dsoal-aldrv.dll~
+     ~infinitysounds/copy/dsoal/dsound.dll~      ~dsound.dll~
+
+COPY ~infinitysounds/copy/dsoal/alsoft.ini~ ~alsoft.ini~
+  PHP_EACH ary_alsoft_cfg AS key => value BEGIN
+    REPLACE_TEXTUALLY ~^#\(%key% ?=\).*$~ ~\1 %value%~
+  END
+
+COPY + ~baldur.ini~ ~baldur.ini~
+  REPLACE_TEXTUALLY ~Environmental Audio=0~ ~Environmental Audio=1~
+BUT_ONLY IF_EXISTS
