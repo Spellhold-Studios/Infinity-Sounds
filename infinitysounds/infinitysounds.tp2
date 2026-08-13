@@ -11118,7 +11118,7 @@ REQUIRE_COMPONENT ~setup-infinitysounds.tp2~ ~230~ @9
 
 PRINT @11 SILENT
 
-INCLUDE ~infinitysounds/lib/250_cre_idle.tpa~
+INCLUDE ~infinitysounds/setup/250-cre-idle-list.tpa~
 
 // existence delay
 //  75 = avg.  5 s
