@@ -754,20 +754,20 @@ PRINT @4 SILENT
 
 COPY_EXISTING ~sndchann.2da~ ~override~
   SET_2DA_ENTRY_LATER ~_#_#_#sndchann~  1 0  80 // default
-  SET_2DA_ENTRY_LATER ~_#_#_#sndchann~  3 1  92 // narration
+  SET_2DA_ENTRY_LATER ~_#_#_#sndchann~  3 1 100 // narration
   SET_2DA_ENTRY_LATER ~_#_#_#sndchann~  4 1  70 // main ambients
   SET_2DA_ENTRY_LATER ~_#_#_#sndchann~  5 1  65 // actions
   SET_2DA_ENTRY_LATER ~_#_#_#sndchann~  6 1  59 // swings
   SET_2DA_ENTRY_LATER ~_#_#_#sndchann~  7 1  73 // casting
   SET_2DA_ENTRY_LATER ~_#_#_#sndchann~  8 1  80 // gui
-  SET_2DA_ENTRY_LATER ~_#_#_#sndchann~  9 1  92 // dialog
-  SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 10 1  92 // char0
-  SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 11 1  92 // char1
-  SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 12 1  92 // char2
-  SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 13 1  92 // char3
-  SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 14 1  92 // char4
-  SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 15 1  92 // char5
-  SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 16 1  92 // monsters
+  SET_2DA_ENTRY_LATER ~_#_#_#sndchann~  9 1 100 // dialog
+  SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 10 1 100 // char0
+  SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 11 1 100 // char1
+  SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 12 1 100 // char2
+  SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 13 1 100 // char3
+  SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 14 1 100 // char4
+  SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 15 1 100 // char5
+  SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 16 1 100 // monsters
   SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 17 1  62 // hits
   SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 18 1  70 // missile
   SET_2DA_ENTRY_LATER ~_#_#_#sndchann~ 19 1  92 // ambients (loop)
